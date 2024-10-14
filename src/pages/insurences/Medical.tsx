@@ -11,7 +11,7 @@ const temp = () => {
                 <img src={Medical} alt="" />
             </div>
             <div className="container">
-                <h2 style={{marginTop: 32}}>Personal & Corporate</h2>
+                <h2 style={{ marginTop: 32 }}>Personal & Corporate</h2>
                 <p style={{
                     padding: '16px 0 24px', fontSize: '16px', lineHeight: '32px'
                 }}>
@@ -19,7 +19,7 @@ const temp = () => {
                     <br />
                     <br />
                     On the corporate front, offering medical insurance as part of an employee benefits package is essential for attracting and retaining top talent. Corporate medical insurance provides employees and their families with access to comprehensive healthcare coverage, promoting their overall well-being and productivity. Typically, the employer sponsors the policy and may cover all or a portion of the premiums, with employees contributing through payroll deductions. This coverage extends beyond individual medical insurance, often including additional benefits such as dental, vision, and mental health services. By prioritizing the health and wellness of their workforce, companies demonstrate their commitment to employee satisfaction and engagement, fostering a positive work environment and driving organizational success.
-                 </p>
+                </p>
             </div>
         </DefaultLayout>
     )

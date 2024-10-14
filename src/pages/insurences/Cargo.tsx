@@ -11,15 +11,11 @@ const temp = () => {
                 <img src={Cargo} alt="" />
             </div>
             <div className="container">
-                <h2 style={{marginTop: 32}}>Personal & Corporate</h2>
+                <h2 style={{ marginTop: 32 }}>Personal & Corporate</h2>
                 <p style={{
                     padding: '16px 0 24px', fontSize: '16px', lineHeight: '32px'
                 }}>
-                    Individual cargo insurance is a pivotal component of personal financial planning, offering individuals and families peace of mind by providing coverage for cargo expenses. This type of insurance typically offers a range of benefits, including coverage for doctor's visits, hospital stays, prescription medications, and preventive care services. With individual cargo insurance, policyholders have the flexibility to choose from various plans and coverage options tailored to their specific healthcare needs and budgetary constraints. Additionally, individual cargo insurance policies often provide access to a network of healthcare providers, ensuring quality care and timely treatment when needed.
-                    <br />
-                    <br />
-                    On the corporate front, offering cargo insurance as part of an employee benefits package is essential for attracting and retaining top talent. Corporate cargo insurance provides employees and their families with access to comprehensive healthcare coverage, promoting their overall well-being and productivity. Typically, the employer sponsors the policy and may cover all or a portion of the premiums, with employees contributing through payroll deductions. This coverage extends beyond individual cargo insurance, often including additional benefits such as dental, vision, and mental health services. By prioritizing the health and wellness of their workforce, companies demonstrate their commitment to employee satisfaction and engagement, fostering a positive work environment and driving organizational success.
-                 </p>
+                    Cargo insurance provides essential protection for goods in transit, whether by land, sea, or air. It covers the loss or damage of cargo during transportation, ensuring that businesses and individuals are financially protected against potential risks such as theft, accidents, natural disasters, or other unforeseen events. By securing cargo insurance, companies can safeguard their investments and ensure the smooth operation of their supply chains, while individuals can have peace of mind knowing their valuable shipments are covered. This type of insurance is crucial for mitigating financial losses and maintaining business continuity in the face of transportation-related challenges.                 </p>
             </div>
         </DefaultLayout>
     )

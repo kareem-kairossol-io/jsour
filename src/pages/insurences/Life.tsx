@@ -6,7 +6,7 @@ const temp = () => {
         <DefaultLayout>
             <div className="page-header">
                 <div className="container">
-                    <h1 className="page-title">Life Insurance</h1>
+                    <h1 className="page-title">Life insurance</h1>
                 </div>
                 <img src={life} alt="" />
             </div>

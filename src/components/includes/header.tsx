@@ -76,6 +76,8 @@ const Header = () => {
                                     <Link to={'/Oil-&-Gas-Insurance'}>Oil & Gas Insurance</Link>
                                     <Link to={'/Fire-Insurance'}>Fire Insurance</Link>
                                     <Link to={'/Misellineous-Insurance'}>Misellineous Insurance</Link>
+                                    <Link to={'/non-payment-risks-insurance'}>Insurance against non-payment risks</Link>
+                                    <Link to={'/Cyber-insurance'}>Cyber insurance</Link>
                                 </div>
                             )
                         }

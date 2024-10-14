@@ -47,16 +47,13 @@ const Home = () => {
             <div>
               <h3>Secure Your assets</h3>
               <p>
-                At Jusoor for Insurance Brokerage , we understand the importance
-                of protecting All your assets. Our comprehensive insurance policies
-                cover everything from your home and car to your business and life.
-                Let us help you safeguard your future today!
+              In today's unpredictable world, safeguarding your assets is more crucial than ever. Our insurance brokerage company is dedicated to providing comprehensive insurance solutions tailored to your unique needs. We work with a network of trusted insurers to offer you a range of policies that protect your valuable possessions, from your home and vehicle to your business and investments. With our expertise and commitment to excellence, you can rest assured that your assets are in safe hands. Let us help you navigate the complexities of insurance so you can focus on what matters most.
               </p>
             </div>
             <div>
               <h3>About Us</h3>
               <p>
-                Our team at Jusoor for Insurance Brokerage possess specialized knowledge in both product offerings and client industries, allowing us to adeptly navigate risks and swiftly address client concerns, we tirelessly strive to introduce cutting-edge insurance solutions tailored to safeguard individuals,families and businesses.
+              Our team at Jusoor for Insurance Brokerage possess specialized knowledge in both product offerings and client industries, allowing us to adeptly navigate risks and swiftly address client concerns, we tirelessly strive to introduce cutting-edge insurance solutions tailored to safeguard individuals, families and businesses.
               </p>
             </div>
           </div>
@@ -65,7 +62,9 @@ const Home = () => {
       <section className="why-us">
         <div className="container">
           <h1>Why People Choosing Us!</h1>
-          <p> We work with multiple insurance carriers to shop around and compare rates and policy conditions, ensuring you receive the most competitive options for your needs. Our expert team is here to answer your questions, provide personalized advice, and guide you smoothly through the entire insurance process. </p>
+          <p>
+          We work with multiple insurance carriers to shop around and compare rates and policy conditions, ensuring you receive the most competitive options for your needs. Our expert team is here to answer your questions, provide personalized advice, and guide you smoothly through the entire insurance process.
+          </p>
           <div className="cards">
             <div>
               <svg id="fi_5026775" enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512" width="512" xmlns="http://www.w3.org/2000/svg"><g><path d="m226 512c-8.972 0-16-7.028-16-16v-39c0-6.217-3.966-11.496-10.103-13.448-12.039-3.439-24.521-8.614-37.072-15.373-2-1.052-4.266-1.61-6.545-1.61-3.763 0-7.304 1.47-9.973 4.138l-27.599 27.6c-2.946 2.946-6.926 4.568-11.208 4.568-4.281 0-8.262-1.622-11.207-4.568l-42.6-42.6c-2.946-2.945-4.568-6.926-4.568-11.207 0-4.282 1.622-8.262 4.568-11.208l27.6-27.599c4.397-4.399 5.41-11.041 2.521-16.528-6.752-12.541-11.927-25.022-15.375-37.09-2.003-6.01-7.41-10.075-13.439-10.075h-39c-8.972 0-16-7.028-16-16v-60c0-8.972 7.028-16 16-16h39c6.217 0 11.496-3.966 13.448-10.103 3.438-12.036 8.613-24.519 15.371-37.072 2.885-5.479 1.872-12.121-2.525-16.518l-27.6-27.601c-2.946-2.946-4.568-6.926-4.568-11.207s1.622-8.261 4.568-11.206l42.6-42.602c2.945-2.946 6.926-4.568 11.207-4.568 4.282 0 8.262 1.622 11.208 4.568l27.599 27.602c2.668 2.668 6.209 4.137 9.971 4.137 2.28 0 4.547-.559 6.556-1.616 12.542-6.754 25.024-11.93 37.092-15.377 6.008-2.004 10.073-7.41 10.073-13.437v-39c0-8.972 7.028-16 16-16h60c8.972 0 16 7.028 16 16v39c0 6.215 3.966 11.494 10.103 13.446 12.039 3.439 24.521 8.614 37.072 15.373 2 1.053 4.267 1.612 6.547 1.612 3.762 0 7.303-1.47 9.971-4.137l27.599-27.602c2.946-2.946 6.926-4.568 11.208-4.568 4.281 0 8.262 1.622 11.207 4.568l42.6 42.602c2.946 2.945 4.568 6.925 4.568 11.206s-1.622 8.261-4.568 11.207l-27.6 27.601c-4.397 4.397-5.41 11.039-2.521 16.526 6.754 12.545 11.928 25.027 15.375 37.092 2.004 6.009 7.411 10.074 13.439 10.074h39c8.972 0 16 7.028 16 16v60c0 8.972-7.028 16-16 16h-39c-6.217 0-11.496 3.966-13.448 10.103-3.44 12.039-8.614 24.521-15.371 37.07-2.885 5.479-1.872 12.121 2.525 16.52l27.6 27.599c2.946 2.946 4.568 6.926 4.568 11.208 0 4.281-1.622 8.262-4.568 11.207l-42.6 42.6c-2.945 2.946-6.926 4.568-11.207 4.568-4.282 0-8.262-1.622-11.208-4.568l-27.599-27.6c-2.668-2.668-6.21-4.138-9.973-4.138-2.279 0-4.546.559-6.554 1.615-12.542 6.754-25.024 11.929-37.092 15.377-6.008 2.004-10.073 7.411-10.073 13.439v39c0 8.972-7.028 16-16 16zm30-390c-73.888 0-134 60.112-134 134s60.112 134 134 134 134-60.112 134-134-60.112-134-134-134z"></path><path d="m290.395 215.395-49.395 49.394-19.395-19.395c-5.859-5.859-15.352-5.859-21.211 0s-5.859 15.352 0 21.211l30 30c5.859 5.859 15.351 5.86 21.211 0l60-60c5.859-5.859 5.859-15.352 0-21.211s-15.351-5.859-21.21.001z"></path></g></svg>

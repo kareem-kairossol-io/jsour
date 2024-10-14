@@ -27,6 +27,8 @@ import Fire from './pages/insurences/Fire';
 import Misellineous from './pages/insurences/Misellineous';
 import Terms from './pages/about/Terms';
 import Privacy from './pages/about/privacy';
+import NonPayment from './pages/insurences/NonPayment';
+import Cyber from './pages/insurences/Cyber';
 
 function App() {
   const [loading, setLoading] = useState<boolean>(true);
@@ -65,6 +67,22 @@ function App() {
           element={
             <>
               <InsurancePlanning />
+            </>
+          }
+        />
+        <Route
+          path="/non-payment-risks-insurance"
+          element={
+            <>
+              <NonPayment />
+            </>
+          }
+        />
+        <Route
+          path="/Cyber-insurance"
+          element={
+            <>
+              <Cyber />
             </>
           }
         />

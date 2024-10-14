@@ -11,14 +11,12 @@ const temp = () => {
                 <img src={Investment} alt="" />
             </div>
             <div className="container">
-                <h2 style={{marginTop: 32}}>Personal & Corporate</h2>
+                <h2 style={{ marginTop: 32 }}>Personal & Corporate</h2>
                 <p style={{
                     padding: '16px 0 24px', fontSize: '16px', lineHeight: '32px'
                 }}>
- Individual life insurance provides financial protection to an individual's loved ones in the event of their death. It offers a lump sum payout to beneficiaries, helping to cover expenses such as funeral costs, outstanding debts, and ongoing living expenses. With individual life insurance, policyholders have the flexibility to choose coverage amounts and customize their policies based on their specific needs and financial goals. 
-                     <br />
-                    <br />
-                    On the other hand, corporate life insurance for employees is a vital component of a comprehensive benefits package offered by companies to their workforce. This type of insurance provides financial security to employees' families in the unfortunate event of their death while employed. Typically, the company owns the policy and pays the premiums, with the employee being the insured individual. In the event of the employee's death, the insurance payout helps to support the employee's dependents by providing a lump sum benefit. This benefit can assist with immediate financial needs such as funeral expenses, outstanding debts, and ongoing living expenses. Additionally, corporate life insurance demonstrates an employer's commitment to the well-being of its employees and their families, enhancing employee morale and loyalty. By offering corporate life insurance, companies not only provide valuable financial protection to their employees but also contribute to a sense of security and stability within the workplace.                 </p>
+                    Investment insurance is a specialized form of financial protection that combines traditional insurance benefits with investment opportunities, designed to help individuals grow their wealth while safeguarding against unforeseen risks. This type of insurance provides policyholders with the dual advantage of securing a safety net for their beneficiaries in the event of the policyholder's death or critical illness, while simultaneously allowing a portion of the premiums to be invested in various financial instruments such as stocks, bonds, or mutual funds. Investment insurance policies are tailored to meet the diverse financial goals and risk appetites of individuals, offering potential returns that can enhance long-term savings and retirement plans. By integrating insurance with investment strategies, policyholders can achieve a balanced approach to financial planning, ensuring both security and growth. This comprehensive coverage not only protects against life's uncertainties but also provides a pathway to accumulate wealth, making investment insurance an integral component of a robust financial strategy.
+                </p>
             </div>
         </DefaultLayout>
     )
