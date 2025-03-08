@@ -85,6 +85,7 @@ const Header = () => {
                     <Link to={'/Customer-Rights'}>Help & Support</Link>
                     <Link to={'/about'}>About Us</Link>
                     <Link to={'/contact'}>Contact Us</Link>
+                    <Link to={'/Customer-Complaints'}>Customer Complaints</Link>
                     </div>
                     <button className="show-mobile-menu" onClick={() => {
                         setIsOpen(!isOpen)

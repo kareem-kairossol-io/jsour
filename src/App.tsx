@@ -29,6 +29,7 @@ import Terms from './pages/about/Terms';
 import Privacy from './pages/about/privacy';
 import NonPayment from './pages/insurences/NonPayment';
 import Cyber from './pages/insurences/Cyber';
+import CustomerComplaints from './pages/CustomerComplaints';
 
 function App() {
   const [loading, setLoading] = useState<boolean>(true);
@@ -51,6 +52,14 @@ function App() {
           element={
             <>
               <Home />
+            </>
+          }
+        />
+        <Route
+          path="/customer-complaints"
+          element={
+            <>
+              <CustomerComplaints />
             </>
           }
         />
