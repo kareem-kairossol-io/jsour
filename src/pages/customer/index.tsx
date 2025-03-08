@@ -1,6 +1,6 @@
 import DefaultLayout from "../../layout/DefaultLayout"
 import rights from './../../images/rights.jpg'
-import pdf from './../../files/pdf.pdf'
+const pdf = require('./../../files/pdf.pdf');
 
 const CustomerRights = () => {
     return (
