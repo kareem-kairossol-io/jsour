@@ -24,6 +24,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { FreeMode, Autoplay } from "swiper/modules";
 import { Link } from "react-router-dom";
+import HeroInsuranceSlider from "./homeSlider";
 
 const Home = () => {
   const [heroRef, heroInView] = useInView({ triggerOnce: true, threshold: 0.1 });
@@ -38,21 +39,7 @@ const Home = () => {
 
   return (
     <DefaultLayout>
-      <motion.section
-        ref={heroRef}
-        initial="hidden"
-        animate={heroInView ? "visible" : "hidden"}
-        variants={fadeInUp}
-        className="hero"
-      >
-        <div className="container">
-          <h2>
-            Individual medical insurance <br />
-            is a pivotal component  <br />
-            of person financial planning
-          </h2>
-        </div>
-      </motion.section>
+      <HeroInsuranceSlider/>
 
       <motion.section
         ref={aboutRef}
