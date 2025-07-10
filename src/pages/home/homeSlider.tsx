@@ -208,9 +208,9 @@ export default function HeroInsuranceSlider() {
                             <ChevronRight className="button-icon" />
                           </button>
                         </Link>
-                        <Link to={slide.link} style={{ textDecoration: "none" }}>
+                        {/* <Link to={slide.link} style={{ textDecoration: "none" }}>
                         <button className="secondary-button">Learn More</button>
-                        </Link>
+                        </Link> */}
                       </motion.div>
                     </motion.div>
                   </div>
