@@ -20,8 +20,7 @@ const heroSlides = [
     id: 1,
     title: "We build trust to <br> secure your future",
     subtitle: "Protect Your Property",
-    description:
-      "Your partner at every step toward security.",
+    description: "Your partner at every step toward security.",
     link: "/Fire-Insurance",
     image: "/static/media/Fire.11f6d127168196b63258.jpg",
     buttonText: "Get Quote",
@@ -108,13 +107,15 @@ const slideInRight = {
 
 export default function HeroInsuranceSlider() {
   const [activeSlide, setActiveSlide] = useState(0)
-  const [isInView, setIsInView] = useState(false)
+  const [hasAnimated, setHasAnimated] = useState(false)
   const sectionRef = useRef(null)
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
-        setIsInView(entry.isIntersecting)
+        if (entry.isIntersecting && !hasAnimated) {
+          setHasAnimated(true)
+        }
       },
       { threshold: 0.1 },
     )
@@ -124,13 +125,13 @@ export default function HeroInsuranceSlider() {
     }
 
     return () => observer.disconnect()
-  }, [])
+  }, [hasAnimated])
 
   return (
     <motion.section
       ref={sectionRef}
       initial="hidden"
-      animate={isInView ? "visible" : "hidden"}
+      animate={hasAnimated ? "visible" : "hidden"}
       variants={fadeInUp}
       className="hero-section"
     >
@@ -199,9 +200,6 @@ export default function HeroInsuranceSlider() {
                             <ChevronRight className="button-icon" />
                           </button>
                         </Link>
-                        {/* <Link to={slide.link} style={{ textDecoration: "none" }}>
-                        <button className="secondary-button">Learn More</button>
-                        </Link> */}
                       </motion.div>
                     </motion.div>
                   </div>

@@ -1,15 +1,48 @@
 import DefaultLayout from "../../layout/DefaultLayout"
 import Fire from './../../images/Fire.jpg'
+import { SwiperSlide, Swiper } from "swiper/react"
+import { Navigation, Pagination, Autoplay } from "swiper/modules"
+import "swiper/css"
+import "swiper/css/navigation"
+import "swiper/css/pagination"
 
 const temp = () => {
     return (
         <DefaultLayout>
-            <div className="page-header">
-                <div className="container">
-                    <h1 className="page-title">Fire and allied perils insurance</h1>
-                </div>
-                <img src={Fire} alt="" />
-            </div>
+            <Swiper
+            modules={[Pagination, Autoplay]}
+            pagination={{ clickable: true }}
+            spaceBetween={30}
+            autoplay={{ delay: 4000 }}
+            loop
+            className="swiper-container"
+            >
+                <SwiperSlide>
+                    <div className="page-header">
+                        <div className="container">
+                            <h1 className="page-title">Fire and allied perils insurance</h1>
+                        </div>
+                        <img src={Fire} alt="" />
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <div className="page-header">
+                        <div className="container">
+                            <h1 className="page-title">Fire and allied perils insurance</h1>
+                        </div>
+                        <img src={Fire} alt="" />
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <div className="page-header">
+                        <div className="container">
+                            <h1 className="page-title">Fire and allied perils insurance</h1>
+                        </div>
+                        <img src={Fire} alt="" />
+                    </div>
+                </SwiperSlide>
+            </Swiper>
+
             <div className="container">
                 <h2 style={{ marginTop: 32 }}>Personal & Corporate</h2>
                 <p style={{
