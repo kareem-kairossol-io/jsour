@@ -11,12 +11,12 @@ const Header = () => {
                 <div className="container">
                     <img src={logo} alt="" className="logo" />
                     <div>
-                        <a href="tel:19004">
+                        <a href="tel:01044479475">
                             <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-phone" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                             <path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
                             </svg>
-                            19004
+                            01044479475
                         </a>
                         <a href="mailto:info@jusoor.com.eg">
                             <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-mail" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -56,7 +56,8 @@ const Header = () => {
                 <div className="container">
                     <div className={"links" + (isOpen ? " open" : '')}>
                     <Link to={'/'}>Home</Link>
-                    <Link to={'/solutions'}>Solutions</Link>
+                    <Link to={'/about'}>About Us</Link>
+                    <Link to={'/solutions'}>How We Work</Link>
                     <div className="has-drop">
                         <p onClick={() => {setShowDrop(!showDrop)}} style={{cursor: 'pointer'}}>
                             Insurance Coverage
@@ -82,10 +83,9 @@ const Header = () => {
                             )
                         }
                     </div>
-                    <Link to={'/Customer-Rights'}>Help & Support</Link>
-                    <Link to={'/about'}>About Us</Link>
-                    <Link to={'/contact'}>Contact Us</Link>
+                    <Link to={'/Customer-Rights'}>Customer Rights</Link>
                     <Link to={'/Customer-Complaints'}>Customer Complaints</Link>
+                    <Link to={'/contact'}>Contact Us</Link>
                     </div>
                     <button className="show-mobile-menu" onClick={() => {
                         setIsOpen(!isOpen)

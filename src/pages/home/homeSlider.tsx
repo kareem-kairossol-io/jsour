@@ -13,14 +13,15 @@ import "swiper/css/navigation"
 import "swiper/css/pagination"
 import "swiper/css/effect-fade"
 import { Link } from "react-router-dom"
+import DOMPurify from "dompurify"
 
 const heroSlides = [
   {
     id: 1,
-    title: "Fire Insurance",
+    title: "We build trust to <br> secure your future",
     subtitle: "Protect Your Property",
     description:
-      "Individual life insurance provides financial protection to an individual's loved ones in case of unexpected events. Secure your family's future today.",
+      "Your partner at every step toward security.",
     link: "/Fire-Insurance",
     image: "/static/media/Fire.11f6d127168196b63258.jpg",
     buttonText: "Get Quote",
@@ -28,10 +29,9 @@ const heroSlides = [
   },
   {
     id: 2,
-    title: "Cargo Insurance",
+    title: "Shield of Trust",
     subtitle: "Secure Your Shipments",
-    description:
-      "There are many variations of passages of Lorem Ipsum available, but the injected humour ensures your cargo is protected during transit worldwide.",
+    description: "Protecting your business with trust and expertise.",
     link: "/Cargo-Insurance",
     image: "/static/media/Cargo.8f1444d61d2e0dddaa1e.jpg",
     buttonText: "Learn More",
@@ -39,10 +39,9 @@ const heroSlides = [
   },
   {
     id: 3,
-    title: "Medical Insurance",
+    title: "Smart Coverage. <br> Real Protection.",
     subtitle: "Your Health, Our Priority",
-    description:
-      "Individual medical insurance is a pivotal component of personal financial planning, offering comprehensive healthcare coverage for you and your family.",
+    description: "Innovative insurance solutions tailored to your needs.",
     link: "/Medical-Insurance",
     image: "/static/media/Medical.57319208baca9a050f1d.jpg",
     buttonText: "Explore Plans",
@@ -50,10 +49,9 @@ const heroSlides = [
   },
   {
     id: 4,
-    title: "Engineering Insurance",
+    title: "Protecting <br> What Matters Most",
     subtitle: "Industrial Protection Solutions",
-    description:
-      "Individual Engineering insurance is a pivotal component of personal financial planning, protecting your industrial assets and operations.",
+    description: "We are here for you, Your family And your business.",
     link: "/Engineering-Insurance",
     image: "/static/media/Engineering.8c69d4bf97e056e4c6c9.jpg",
     buttonText: "Get Coverage",
@@ -61,10 +59,9 @@ const heroSlides = [
   },
   {
     id: 5,
-    title: "Life Insurance",
+    title: "Because Every Risk Deserves a Strategy",
     subtitle: "Secure Your Legacy",
-    description:
-      "Individual Life insurance is a pivotal component of personal financial planning, ensuring your loved ones are financially protected.",
+    description: "Well-crafted plans to face every challenge.",
     link: "/Life-Insurance",
     image: "/static/media/life.b5ee892a115ab684eecd.jpg",
     buttonText: "Start Today",
@@ -72,10 +69,9 @@ const heroSlides = [
   },
   {
     id: 6,
-    title: "Motor Insurance",
+    title: "We Cover. You Prosper.",
     subtitle: "Drive with Confidence",
-    description:
-      "Individual Motor insurance is a pivotal component of personal financial planning, protecting your vehicle and providing peace of mind on the road.",
+    description: "Your security is the path to your success.",
     link: "/Motor-Insurance",
     image: "/static/media/Motor.fd6751f9b9a42a9b9b67.jpg",
     buttonText: "Get Insured",
@@ -185,16 +181,11 @@ export default function HeroInsuranceSlider() {
                       variants={slideInLeft}
                       className="text-content"
                     >
-                      {/* Subtitle */}
-                      <motion.p variants={fadeInUp} className="subtitle">
-                        {slide.subtitle}
-                      </motion.p>
-
-                      {/* Title */}
-                      <motion.h1 variants={slideInLeft} className="title">
-                        {slide.title}
-                      </motion.h1>
-
+                      <motion.h1
+                        variants={slideInLeft}
+                        className="title"
+                        dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(slide.title) }}
+                      />
                       {/* Description */}
                       <motion.p variants={slideInRight} className="description">
                         {slide.description}

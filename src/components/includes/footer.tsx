@@ -25,7 +25,7 @@ const Footer = () => {
             </a>
           </p>
           <p className="footer-text">
-            <i className="fa fa-phone-alt"></i> 19004
+            <i className="fa fa-phone-alt"></i> 01044479475
           </p>
           <p className="footer-text">
             <i className="fa fa-envelope"></i> info@jusoor.com.eg

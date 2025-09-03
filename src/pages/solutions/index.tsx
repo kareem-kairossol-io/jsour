@@ -13,7 +13,7 @@ const Solutions = () => {
         <DefaultLayout>
             <div className="page-header">
                 <div className="container">
-                    <h1 className="page-title">Solutions</h1>
+                    <h1 className="page-title">How We Work</h1>
                 </div>
                 <img src={sol} alt="" />
             </div>
