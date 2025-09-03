@@ -5,6 +5,7 @@ import { Navigation, Pagination, Autoplay } from "swiper/modules"
 import "swiper/css"
 import "swiper/css/navigation"
 import "swiper/css/pagination"
+import ContentComponent from "./ContentComponent"
 
 const temp = () => {
     return (
@@ -44,12 +45,16 @@ const temp = () => {
             </Swiper>
 
             <div className="container">
-                <h2 style={{ marginTop: 32 }}>Personal & Corporate</h2>
-                <p style={{
-                    padding: '16px 0 24px', fontSize: '16px', lineHeight: '32px'
-                }}>
-                    Hull insurance provides comprehensive coverage for the physical damage or loss of a vessel, whether it is a commercial ship, fishing boat, or recreational yacht. This type of insurance protects the owner against a wide range of risks, including collisions, grounding, fire, and other maritime perils. By securing hull insurance, vessel owners can ensure that their significant investments are protected, allowing for repairs or replacement in the event of damage or total loss. This insurance is crucial for maintaining the operational capability of the vessel and mitigating financial losses, offering peace of mind to both commercial operators and private owners.
-                </p>
+                <ContentComponent img="/517.jpg" content={`
+                    <div>
+                        <h2 style={{ marginTop: 32 }}>Personal & Corporate</h2>
+                        <p style={{
+                            padding: '16px 0 24px', fontSize: '16px', lineHeight: '32px'
+                        }}>
+                            Hull insurance provides comprehensive coverage for the physical damage or loss of a vessel, whether it is a commercial ship, fishing boat, or recreational yacht. This type of insurance protects the owner against a wide range of risks, including collisions, grounding, fire, and other maritime perils. By securing hull insurance, vessel owners can ensure that their significant investments are protected, allowing for repairs or replacement in the event of damage or total loss. This insurance is crucial for maintaining the operational capability of the vessel and mitigating financial losses, offering peace of mind to both commercial operators and private owners.
+                        </p>
+                    </div>
+                `} />
             </div>
         </DefaultLayout>
     )
