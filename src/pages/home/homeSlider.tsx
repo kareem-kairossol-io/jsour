@@ -192,7 +192,7 @@ export default function HeroInsuranceSlider() {
                         {slide.description}
                       </motion.p>
 
-                      {/* Buttons */}
+                      {/* Buttons
                       <motion.div variants={fadeInUp} className="button-group">
                         <Link to={slide.link} style={{ textDecoration: "none" }}>
                           <button className="primary-button">
@@ -200,7 +200,7 @@ export default function HeroInsuranceSlider() {
                             <ChevronRight className="button-icon" />
                           </button>
                         </Link>
-                      </motion.div>
+                      </motion.div> */}
                     </motion.div>
                   </div>
                 </div>

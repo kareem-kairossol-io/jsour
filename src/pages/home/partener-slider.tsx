@@ -21,7 +21,6 @@ export default function PartnersSection() {
     <section className="partners-section">
       <div className="partners-container">
         <h2 className="partners-title">Our Partners</h2>
-        <p className="partners-subtitle">Trusted by leading companies worldwide</p>
 
         <div className="partners-slider">
           <Swiper
