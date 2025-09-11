@@ -8,7 +8,7 @@ const temp = () => {
                 <div className="container">
                     <h1 className="page-title">Policy Renewal</h1>
                 </div>
-                <img src={policy} alt="" />
+                <img src="imgs/Policy Renewal.jpg" alt="" />
             </div>
             <div className="container">
                 <p style={{

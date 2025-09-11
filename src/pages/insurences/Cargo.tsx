@@ -45,7 +45,7 @@ const temp = () => {
             </Swiper>
 
             <div className="container">
-                <ContentComponent img="/6385.jpg" content={`
+                <ContentComponent img="/imgs/Cargo insurance.jpg" content={`
                     <div>
                         <h2 style={{ marginTop: 32 }}>Personal & Corporate</h2>
                         <p style={{

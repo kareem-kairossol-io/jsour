@@ -9,7 +9,7 @@ const CustomerRights = () => {
                 <div className="container">
                     <h1 className="page-title">Cutomer Rights</h1>
                 </div>
-                <img src={rights} alt="" />
+                <img src="/imgs/Customer rights.jpg" alt="" />
             </div>
             <div className="container">
                 <br />

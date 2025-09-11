@@ -22,7 +22,7 @@ const heroSlides = [
     subtitle: "Protect Your Property",
     description: "Your partner at every step toward security.",
     link: "/Fire-Insurance",
-    image: "/static/media/Fire.11f6d127168196b63258.jpg",
+    image: "/imgs/slider 1.jpg",
     buttonText: "Get Quote",
     bgGradient: "linear-gradient(to right, rgba(127, 29, 29, 0.7), rgba(154, 52, 18, 0.7))",
   },
@@ -32,7 +32,7 @@ const heroSlides = [
     subtitle: "Secure Your Shipments",
     description: "Protecting your business with trust and expertise.",
     link: "/Cargo-Insurance",
-    image: "/static/media/Cargo.8f1444d61d2e0dddaa1e.jpg",
+    image: "/imgs/Slider 2.jpg",
     buttonText: "Learn More",
     bgGradient: "linear-gradient(to right, rgba(30, 58, 138, 0.7), rgba(21, 94, 117, 0.7))",
   },
@@ -42,7 +42,7 @@ const heroSlides = [
     subtitle: "Your Health, Our Priority",
     description: "Innovative insurance solutions tailored to your needs.",
     link: "/Medical-Insurance",
-    image: "/static/media/Medical.57319208baca9a050f1d.jpg",
+    image: "/imgs/Slider 3.jpg",
     buttonText: "Explore Plans",
     bgGradient: "linear-gradient(to right, rgba(20, 83, 45, 0.7), rgba(6, 95, 70, 0.7))",
   },
@@ -52,7 +52,7 @@ const heroSlides = [
     subtitle: "Industrial Protection Solutions",
     description: "We are here for you, Your family And your business.",
     link: "/Engineering-Insurance",
-    image: "/static/media/Engineering.8c69d4bf97e056e4c6c9.jpg",
+    image: "/imgs/Slider 4.jpg",
     buttonText: "Get Coverage",
     bgGradient: "linear-gradient(to right, rgba(154, 52, 18, 0.7), rgba(146, 64, 14, 0.7))",
   },
@@ -62,7 +62,7 @@ const heroSlides = [
     subtitle: "Secure Your Legacy",
     description: "Well-crafted plans to face every challenge.",
     link: "/Life-Insurance",
-    image: "/static/media/life.b5ee892a115ab684eecd.jpg",
+    image: "/imgs/Slider 5.png",
     buttonText: "Start Today",
     bgGradient: "linear-gradient(to right, rgba(88, 28, 135, 0.7), rgba(67, 56, 202, 0.7))",
   },
@@ -72,7 +72,7 @@ const heroSlides = [
     subtitle: "Drive with Confidence",
     description: "Your security is the path to your success.",
     link: "/Motor-Insurance",
-    image: "/static/media/Motor.fd6751f9b9a42a9b9b67.jpg",
+    image: "/imgs/Slider 6.jpg",
     buttonText: "Get Insured",
     bgGradient: "linear-gradient(to right, rgba(67, 56, 202, 0.7), rgba(37, 99, 235, 0.7))",
   },
@@ -162,11 +162,9 @@ export default function HeroInsuranceSlider() {
             <div className="slide-container">
               {/* Background Image */}
               <div
-                className="slide-background"
-                style={{
-                  backgroundImage: `url(${slide.image})`,
-                }}
-              />
+                className="slide-background">
+                <img src={slide.image} alt={`Slide ${index + 1}`} className="background-image" />
+              </div>
 
               {/* Overlay */}
               <div className="slide-overlay" style={{ background: slide.bgGradient }} />
