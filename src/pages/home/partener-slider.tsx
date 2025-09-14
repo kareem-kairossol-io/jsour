@@ -5,16 +5,10 @@ import { Autoplay } from "swiper/modules"
 import "swiper/css"
 import "./partener.css"
 
-const partners = [
-  { name: "Misr Inusrance", logo: "/Misr-insurance.png" },
-  { name: "Misr Inusrance", logo: "/Misr-insurance.png" },
-  { name: "Misr Inusrance", logo: "/Misr-insurance.png" },
-  { name: "Misr Inusrance", logo: "/Misr-insurance.png" },
-  { name: "Misr Inusrance", logo: "/Misr-insurance.png" },
-  { name: "Misr Inusrance", logo: "/Misr-insurance.png" },
-  { name: "Misr Inusrance", logo: "/Misr-insurance.png" },
-  { name: "Misr Inusrance", logo: "/Misr-insurance.png" },
-]
+const partners = Array.from({ length: 12 }, (_, i) => ({
+  name: `Partner ${i + 1}`,
+  logo: `/imgs/parteners/partener_${i + 1}.jpeg`,
+}))
 
 export default function PartnersSection() {
   return (
@@ -42,7 +36,7 @@ export default function PartnersSection() {
                 spaceBetween: 60,
               },
               1024: {
-                slidesPerView: 5,
+                slidesPerView: 6,
                 spaceBetween: 70,
               },
             }}
