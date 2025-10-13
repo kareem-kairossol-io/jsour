@@ -94,6 +94,8 @@ const resources = {
         }
       },
       solutions: {
+        title: "How We Work",
+        readMore: "Read More",
         insurancePlanning: {
           title: "Insurance Planning",
           content: "Jusoor empowers individuals and organizations to safeguard their assets and navigate life's uncertainties with confidence. Through comprehensive insurance planning, we help you mitigate potential financial losses from unforeseen events like accidents, illnesses, natural disasters, and liabilities. Our approach involves a systematic assessment of your current and future needs. We identify the most suitable insurance coverage options, ensuring your policies adapt to changing circumstances. Effective insurance planning offers peace of mind. More importantly, it serves as a proactive strategy to maintain financial stability and protect your long-term financial goals. Whether it's securing life, health, property, liability, or any other form of insurance, a thoughtful approach to insurance planning with Jusoor can make a significant difference."
@@ -195,7 +197,251 @@ const resources = {
           subtitle: "Personal & Corporate",
           content: "Cyber insurance provides crucial protection against a range of cyber threats and data breaches that can significantly impact businesses. This type of insurance covers losses resulting from cyberattacks, such as data breaches, ransomware attacks, and network failures. It also includes coverage for legal fees, notification costs, and expenses related to restoring data and systems. By securing cyber insurance, businesses can mitigate the financial and operational risks associated with cyber incidents, ensuring they are prepared to respond effectively to threats. This insurance is essential for maintaining trust, protecting sensitive information, and ensuring business continuity in an increasingly digital world."
         }
-      }
+      },
+      contact: {
+        title: "Contact Us",
+        subtitle: "Jusoor Always Listening",
+        form: {
+          email: "Your Email",
+          name: "Your Name", 
+          subject: "Subject",
+          message: "Message",
+          button: "Send Message"
+        }
+      },
+      about: {
+          title: "About Jusoor",
+          vision: {
+              title: "Our Vision",
+              content: "Vision content..."
+          },
+          mission: {
+              title: "Our Mission",
+              content: "Mission content..."
+          },
+          objective: {
+              title: "Our Objective",
+              content: "Objective content..."
+          }
+      },
+      privacy: {
+        title: "Privacy Policy",
+        introduction: {
+          title: "Introduction:",
+          content: "We at Jusoor For Insurance Brokerage understand the importance of protecting your privacy and the information you entrust to us. This Privacy Policy explains how we collect, use, disclose, and manage your personal information."
+        },
+        informationCollect: {
+          title: "Information We Collect:",
+          content: "We may collect the following personal information about you:",
+          items: {
+            contact: "Contact information: Name, address, phone number, email address.",
+            insurance: "Insurance information: Policy details, claims history, risk factors.",
+            demographic: "Demographic information: Age, gender, occupation, marital status.",
+            financial: "Financial information: Income, assets, credit score.",
+            ssn: "Social Security number (if required by law or regulation)."
+          }
+        },
+        useInformation: {
+          title: "We Use Your Information to:",
+          items: {
+            provide: "Provide insurance products and services.",
+            process: "Process and manage your insurance policies.",
+            assess: "Assess your insurance needs and risks.",
+            prevent: "Prevent fraud and comply with legal requirements.",
+            communicate: "Communicate with you about your insurance needs.",
+            improve: "Improve our products and services."
+          }
+        },
+        sharingInformation: {
+          title: "Sharing Your Information:",
+          content: "We may share your information with:",
+          items: {
+            carriers: "Insurance carriers",
+            adjusters: "Claims adjusters",
+            government: "Government agencies (as required by law)",
+            thirdParty: "Third-party service providers who assist us in providing our services",
+            protection: "We will only share your information with third-party service providers who have agreed to protect your privacy in accordance with our standards.",
+            noSell: "We will not sell or rent your information to third parties."
+          }
+        },
+        yourRights: {
+          title: "You have the right to:",
+          items: {
+            access: "Access and update your personal information",
+            delete: "Request that we delete your personal information",
+            optOut: "Opt out of receiving marketing communications from us"
+          }
+        },
+        security: {
+          title: "Security:",
+          content: "We take steps to protect your information from unauthorized access, use, disclosure, alteration, or destruction. We use secure servers, encryption, and other security measures to protect your information."
+        },
+        cookies: {
+          title: "Cookies and Tracking Technologies:",
+          content: "We may use cookies and other tracking technologies to collect information about your use of our website. This information may be used to personalize your experience on our website and to improve our services. You can control the use of cookies and tracking technologies through your browser settings."
+        },
+        dataRetention: {
+          title: "Data Retention:",
+          content: "We will retain your information for as long as necessary to provide you with our services and comply with legal requirements."
+        },
+        childrenPrivacy: {
+          title: "Children's Privacy:",
+          content: "Our website is not intended for children under the age of 13. We do not knowingly collect information from children under the age of 13."
+        },
+        changes: {
+          title: "Changes to This Privacy Policy:",
+          content: "We may update this Privacy Policy from time to time. We will post any changes on our website."
+        },
+        contactUs: {
+          title: "Contact Us:",
+          content: "If you have any questions about this Privacy Policy please contact us"
+        }
+      },
+      customerRights: {
+        title: "Customer Rights",
+        consumerGuide: "Consumer Guide",
+        description: "A right owned by the consumer with any person or entity, whether a private company or a government institution, to know his rights. And because in Jusoor the focus of our attention is the customer and his satisfaction stems from within all employees and those in charge of decision-making in Jusoor Company, clarifying all methods and transactions to the customer in the event of his dissatisfaction with the service or the product. All communication channels are available with the customer from us internally as we say Jusoor Always Listening so we are ready to contact us. In the event that the client is dissatisfied with any process or procedure, he has the right to contact the Financial Regulatory Authority.",
+        satisfaction: "Your satisfaction, we always work to improve our procedures and process",
+        note: "Note:",
+        fra: "The Financial Regulatory Authority",
+        guideInfo: "Created this guide to provide important information to insurance policy holders.",
+        readBelow: "You can read it below or",
+        download: "Download"
+      },
+      customerComplaints: {
+        title: "Customer Complaints Handling Procedures",
+        introduction: "At Jusoor Insurance Brokerage, we are committed to providing high-quality insurance services with transparency and professionalism. In the event of any complaint, we ensure a clear and fair process to address and resolve it in a manner that meets our clients' satisfaction.",
+        procedures: {
+          title: "Complaint Submission and Handling Procedures:",
+          submitting: {
+            title: "Submitting a Complaint:",
+            description: "Clients can submit their complaints through one of the following channels:",
+            channels: {
+              email: "Email:",
+              phone: "Phone:",
+              office: "Visiting our office:",
+              address: "10 El-Batal Ahmed Abd El-Aziz, Dokki, Giza"
+            }
+          },
+          acknowledgment: {
+            title: "Acknowledgment of Receipt:",
+            description: "Upon receiving the complaint, an acknowledgment will be sent to the client, including a reference number for follow-up."
+          },
+          review: {
+            title: "Complaint Review:",
+            description: "A specialized team will carefully review the complaint and contact the client within [3-5] business days to request any additional documents if necessary."
+          },
+          response: {
+            title: "Response to the Complaint:",
+            description: "A formal response will be provided to the client within [7] business days, outlining the measures taken to resolve the issue."
+          },
+          escalation: {
+            title: "If the Client is Not Satisfied with the Proposed Resolution:",
+            description: "If a satisfactory resolution is not reached, the client has the right to escalate the complaint to the Financial Regulatory Authority (FRA) through the following channels:",
+            channels: {
+              website: "Website:",
+              email: "Email:"
+            }
+          }
+        },
+        officer: {
+          title: "Company Complaints Officer:",
+          description: "To ensure effective communication and transparency, [………………] has been appointed as the designated officer responsible for responding to complaints and inquiries.",
+          contact: "He can be reached via email at [………………………………..…] or phone at [……………………]."
+        },
+        closing: "At Jusoor Insurance Brokerage, we believe that our clients' feedback and complaints provide valuable opportunities for improving our services. We are committed to ensuring the highest levels of satisfaction and trust."
+      },
+      footer: {
+        address: {
+          title: "Address",
+          street: "10 El-Batal Ahmed Abd El-Aziz Street, Mohandessin, Giza",
+          phone: "01044479475",
+          email: "info@jusoor.com.eg"
+        },
+        quickLinks: {
+          title: "Quick Links",
+          aboutUs: "About Us",
+          contactUs: "Contact Us",
+          ourSolutions: "Our Solutions",
+          terms: "Terms & Conditions",
+          privacy: "Privacy Policy"
+        },
+        socialMedia: {
+          title: "Social Media",
+          subtitle: "Always in touch"
+        },
+        complaints: {
+          text1: "If a client has a complaint, they have the right to first submit it to the company via phone no. 00201044479475 or email at",
+          text2: "or manually at the company's headquarters. If the complaint is not resolved within the specified timeframe, the company fails to address the complaint, or the client is not satisfied with the handling of their complaint within the company, they have the right to escalate it to the Financial Regulatory Authority (FRA) through its official website:"
+        },
+        regulation: {
+          text1: "Jusoor for Insurance Brokerage is regulated and supervised by the Financial Regulatory Authority (F.R.A) and licensed under no. 106. The website has been approved by the FRA on ../../….",
+          text2: "C.R No.: 168676 | Tax Registration No.: 636-084-167"
+        },
+        copyright: "COPYRIGHT © 2025 JUSOOR FOR INSURANCE BROKERAGE - ALL RIGHTS RESERVED."
+      },
+      popularInsuranceTitle: "Popular Insurance Products",
+      ourPartenerTitle: "Our Partners",
+        terms: {
+          pageTitle: "Terms and Conditions",
+          mainTitle: "Disclaimer & Terms of Use for Brokerage Insurance Brokerage Website",
+          introduction: {
+            title: "Introduction:",
+            content: "Welcome to the Brokerage Insurance Brokerage website! By accessing this website, you agree to be bound by the following terms and conditions. Please read these terms carefully before using our website."
+          },
+          definitions: {
+            title: "Definitions:",
+            client: '"Client," "You," and "Your" refer to you, the user of this website.',
+            company: '"The Company," "Ourselves," "We," "Our," and "Us" refer to Brokerage Insurance Brokerage.',
+            parties: '"Party," "Parties," or "Us" refers to both the Client and us.'
+          },
+          intellectualProperty: {
+            title: "Intellectual Property Rights:",
+            content: "Unless otherwise stated, Brokerage Insurance Brokerage owns all intellectual property rights on this website. This includes all written content, images, and other materials. You are granted access to this material for your personal use only, subject to the restrictions set forth in these terms."
+          },
+          restrictions: {
+            title: "Restrictions:",
+            republish: "You are not permitted to republish material from this website.",
+            sell: "You are not permitted to sell, rent, or sub-license material from this website.",
+            reproduce: "You are not permitted to reproduce, duplicate, or copy material from this website.",
+            redistribute: "You are not permitted to redistribute content from this website."
+          },
+          userComments: {
+            title: "User Comments:",
+            content: "Certain areas of our website allow users to post and exchange opinions and information. Brokerage Insurance Brokerage does not filter, edit, publish, or review these comments before they appear on the website. The views expressed in the comments do not reflect the views of Brokerage Insurance Brokerage, its agents, or its affiliates. They reflect the views and opinions of the individual users who posted them.",
+            rights: "Brokerage Insurance Brokerage reserves the right to monitor all comments and remove any that are deemed inappropriate, offensive, or in breach of these terms."
+          },
+          warranties: {
+            title: "Warranties & Representations:",
+            intro: "By posting comments on our website, you warrant and represent that:",
+            right: "You have the right to post the comments and have all necessary licenses and consents to do so.",
+            noInfringe: "The comments do not infringe on any intellectual property rights of any third party.",
+            noDefamatory: "The comments do not contain any defamatory, libelous, offensive, indecent, or unlawful material, or invade anyone's privacy.",
+            noSolicitation: "The comments will not be used to solicit or promote business, custom, or unlawful activity."
+          },
+          cookies: {
+            title: "Cookies:",
+            content: "Our website uses cookies to enhance your experience. By accessing our website, you agree to the use of cookies in accordance with our Privacy Policy."
+          },
+          hyperlinking: {
+            title: "Hyperlinking to our Website:",
+            intro: "The following organizations are permitted to link to our website without prior written approval:",
+            government: "Government agencies",
+            searchEngines: "Search engines",
+            news: "News organizations",
+            directories: "Online directory distributors",
+            businesses: "Accredited businesses (excluding non-profit organizations, charity shopping malls, and charity fundraising groups)",
+            conditions: "These organizations may link to our home page, publications, or other website information as long as the link is not misleading, does not falsely imply sponsorship, and fits within the context of the linking party's website."
+          },
+          disclaimer: {
+            title: "Disclaimer:",
+            content: "We reserve the right to modify these terms and conditions at any time. This includes the right to remove or edit any content from our website. Your continued use of this website after any changes constitutes your acceptance of the revised terms."
+          },
+          contact: {
+            title: "Contact Us:",
+            content: "If you have any questions about these terms and conditions, please contact us."
+          }
+        }
     }
   },
   ar: {
@@ -289,6 +535,8 @@ const resources = {
         }
       },
       solutions: {
+        title: "كيف نعمل",
+        readMore: "اقراء المزيد",
         insurancePlanning: {
           title: "التخطيط التأميني",
           content: "تُمكّن جسور الأفراد والمنظمات من حماية أصولهم والتعامل مع عدم اليقين في الحياة بثقة. من خلال التخطيط التأميني الشامل، نساعدك على تخفيف الخسائر المالية المحتملة من الأحداث غير المتوقعة مثل الحوادث، والأمراض، والكوارث الطبيعية، والمسؤوليات. يشمل نهجنا تقييمًا منهجيًا لاحتياجاتك الحالية والمستقبلية. نقوم بتحديد خيارات التغطية التأمينية الأنسب، مما يضمن أن تتكيف سياساتك مع الظروف المتغيرة. يوفر التخطيط التأميني الفعّال راحة البال، والأهم من ذلك، أنه يعد استراتيجية استباقية للحفاظ على الاستقرار المالي وحماية أهدافك المالية طويلة الأجل. سواء كان ذلك لتأمين الحياة، أو الصحة، أو الممتلكات، أو المسؤولية، أو أي شكل آخر من أشكال التأمين، فإن نهجًا مدروسًا للتخطيط التأميني مع جسور يمكن أن يحدث فرقًا كبيرًا."
@@ -389,6 +637,250 @@ const resources = {
           title: "التأمين ضد المخاطر الإلكترونية",
           subtitle: "شخصي وللشركات",
           content: "التأمين ضد المخاطر الإلكترونية يوفر حماية أساسية ضد مجموعة من التهديدات الإلكترونية وانتهاكات البيانات التي يمكن أن تؤثر بشكل كبير على الأعمال التجارية. يغطي هذا النوع من التأمين الخسائر الناتجة عن الهجمات الإلكترونية، مثل انتهاكات البيانات، وهجمات الفدية، وفشل الشبكات. كما يشمل تغطية الرسوم القانونية، وتكاليف الإخطار، والنفقات المتعلقة باستعادة البيانات والأنظمة. من خلال تأمين المخاطر الإلكترونية، يمكن للشركات تخفيف المخاطر المالية والتشغيلية المرتبطة بالحوادث الإلكترونية، وضمان استعدادها للاستجابة بفعالية للتهديدات. هذا التأمين ضروري للحفاظ على الثقة، وحماية المعلومات الحساسة، وضمان استمرارية الأعمال في عالم رقمي متزايد."
+        }
+      },
+      contact: {
+        title: "اتصل بنا",
+        subtitle: "جسور دائماً تستمع إليك",
+        form: {
+          email: "بريدك الإلكتروني",
+          name: "اسمك",
+          subject: "الموضوع",
+          message: "الرسالة",
+          button: "إرسال الرسالة"
+        }
+      },
+      about: {
+        title: "عن جسور",
+        vision: {
+            title: "رؤيتنا",
+            content: "نسعى لأن نكون الشريك الأكثر موثوقية في مجال الوساطة التأمينية، من خلال تقديم حلول مبتكرة تلبي احتياجات عملائنا وتتجاوز توقعاتهم."
+        },
+        mission: {
+            title: "رسالتنا",
+            content: "تقديم خدمات وساطة تأمينية متميزة تضمن حماية شاملة لعملائنا، مع الالتزام بأعلى معايير الجودة والشفافية والمهنية."
+        },
+        objective: {
+            title: "أهدافنا",
+            content: "نهدف إلى بناء علاقات طويلة الأمد مع عملائنا من خلال تقديم حلول تأمينية مخصصة، وضمان خدمة عملاء استثنائية، والمساهمة في تطوير صناعة التأمين."
+        }
+      },
+      privacy: {
+        title: "سياسة الخصوصية",
+        introduction: {
+          title: "مقدمة:",
+          content: "نحن في جسور للوساطة التأمينية ندرك أهمية حماية خصوصيتك والمعلومات التي تأتمننا عليها. توضح سياسة الخصوصية هذه كيفية جمع واستخدام والكشف عن وإدارة معلوماتك الشخصية."
+        },
+        informationCollect: {
+          title: "المعلومات التي نجمعها:",
+          content: "قد نجمع المعلومات الشخصية التالية عنك:",
+          items: {
+            contact: "معلومات الاتصال: الاسم والعنوان ورقم الهاتف وعنوان البريد الإلكتروني.",
+            insurance: "معلومات التأمين: تفاصيل الوثيقة وتاريخ المطالبات وعوامل الخطر.",
+            demographic: "المعلومات الديموغرافية: العمر والجنس والمهنة والحالة الاجتماعية.",
+            financial: "المعلومات المالية: الدخل والأصول والتصنيف الائتماني.",
+            ssn: "رقم الضمان الاجتماعي (إذا كان مطلوبًا بموجب القانون أو اللوائح)."
+          }
+        },
+        useInformation: {
+          title: "نستخدم معلوماتك من أجل:",
+          items: {
+            provide: "تقديم منتجات وخدمات التأمين.",
+            process: "معالجة وإدارة وثائق التأمين الخاصة بك.",
+            assess: "تقييم احتياجاتك ومخاطرك التأمينية.",
+            prevent: "منع الاحتيال والامتثال للمتطلبات القانونية.",
+            communicate: "التواصل معك بشأن احتياجاتك التأمينية.",
+            improve: "تحسين منتجاتنا وخدماتنا."
+          }
+        },
+        sharingInformation: {
+          title: "مشاركة معلوماتك:",
+          content: "قد نشارك معلوماتك مع:",
+          items: {
+            carriers: "شركات التأمين",
+            adjusters: "معدلي المطالبات",
+            government: "الجهات الحكومية (حسب ما يقتضيه القانون)",
+            thirdParty: "مقدمي الخدمات من الأطراف الثالثة الذين يساعدوننا في تقديم خدماتنا",
+            protection: "سنشارك معلوماتك فقط مع مقدمي الخدمات من الأطراف الثالثة الذين وافقوا على حماية خصوصيتك وفقًا لمعاييرنا.",
+            noSell: "لن نبيع أو نؤجر معلوماتك لأطراف ثالثة."
+          }
+        },
+        yourRights: {
+          title: "لديك الحق في:",
+          items: {
+            access: "الوصول إلى معلوماتك الشخصية وتحديثها",
+            delete: "طلب حذف معلوماتك الشخصية",
+            optOut: "إلغاء الاشتراك في تلقي الاتصالات التسويقية منا"
+          }
+        },
+        security: {
+          title: "الأمان:",
+          content: "نتخذ خطوات لحماية معلوماتك من الوصول أو الاستخدام أو الكشف أو التعديل أو الإتلاف غير المصرح به. نستخدم خوادم آمنة والتشفير وإجراءات أمنية أخرى لحماية معلوماتك."
+        },
+        cookies: {
+          title: "ملفات تعريف الارتباط وتقنيات التتبع:",
+          content: "قد نستخدم ملفات تعريف الارتباط وتقنيات التتبع الأخرى لجمع معلومات حول استخدامك لموقعنا الإلكتروني. يمكن استخدام هذه المعلومات لتخصيص تجربتك على موقعنا وتحسين خدماتنا. يمكنك التحكم في استخدام ملفات تعريف الارتباط وتقنيات التتبع من خلال إعدادات المتصفح."
+        },
+        dataRetention: {
+          title: "الاحتفاظ بالبيانات:",
+          content: "سنحتفظ بمعلوماتك طالما كان ذلك ضروريًا لتزويدك بخدماتنا والامتثال للمتطلبات القانونية."
+        },
+        childrenPrivacy: {
+          title: "خصوصية الأطفال:",
+          content: "موقعنا الإلكتروني غير مخصص للأطفال دون سن 13 عامًا. نحن لا نجمع عن علم معلومات من الأطفال دون سن 13 عامًا."
+        },
+        changes: {
+          title: "التغييرات على سياسة الخصوصية هذه:",
+          content: "قد نقوم بتحديث سياسة الخصوصية هذه من وقت لآخر. سننشر أي تغييرات على موقعنا الإلكتروني."
+        },
+        contactUs: {
+          title: "اتصل بنا:",
+          content: "إذا كان لديك أي أسئلة حول سياسة الخصوصية هذه، يرجى الاتصال بنا"
+        }
+      },
+      popularInsuranceTitle: "منتجات التأمين الشائعة",
+      ourPartenerTitle: "شركاؤنا",
+      customerRights: {
+        title: "حقوق العملاء",
+        consumerGuide: "دليل المستهلك",
+        description: "حق يملكه المستهلك مع أي شخص أو كيان، سواء كانت شركة خاصة أو مؤسسة حكومية، لمعرفة حقوقه. ولأن التركيز في جسور هو العميل ورضاه ينبع من داخل جميع الموظفين والمسؤولين عن صنع القرار في شركة جسور، نوضح جميع الأساليب والمعاملات للعميل في حالة عدم رضاه عن الخدمة أو المنتج. جميع قنوات الاتصال متاحة مع العميل من قبلنا داخليًا كما نقول جسور دائمًا تستمع لذلك نحن جاهزون للاتصال بنا. في حالة عدم رضا العميل عن أي عملية أو إجراء، له الحق في الاتصال بالهيئة العامة للرقابة المالية.",
+        satisfaction: "رضاك، نعمل دائمًا على تحسين إجراءاتنا وعملياتنا",
+        note: "ملاحظة:",
+        fra: "الهيئة العامة للرقابة المالية",
+        guideInfo: "أنشأت هذا الدليل لتقديم معلومات مهمة لحاملي وثائق التأمين.",
+        readBelow: "يمكنك قراءته أدناه أو",
+        download: "تحميل"
+      },
+      customerComplaints: {
+        title: "إجراءات معالجة شكاوى العملاء",
+        introduction: "في جسور لوساطة التأمين، نلتزم بتقديم خدمات تأمينية عالية الجودة بشفافية واحترافية. في حالة وجود أي شكوى، نضمن عملية واضحة وعادلة لمعالجتها وحلها بطريقة تلبي رضا عملائنا.",
+        procedures: {
+          title: "إجراءات تقديم الشكاوى ومعالجتها:",
+          submitting: {
+            title: "تقديم الشكوى:",
+            description: "يمكن للعملاء تقديم شكاواهم من خلال إحدى القنوات التالية:",
+            channels: {
+              email: "البريد الإلكتروني:",
+              phone: "الهاتف:",
+              office: "زيارة مكتبنا:",
+              address: "10 شارع البطل أحمد عبد العزيز، الدقي، الجيزة"
+            }
+          },
+          acknowledgment: {
+            title: "الإقرار بالاستلام:",
+            description: "عند استلام الشكوى، سيتم إرسال إقرار بالاستلام إلى العميل، متضمنًا رقم مرجعي للمتابعة."
+          },
+          review: {
+            title: "مراجعة الشكوى:",
+            description: "سيقوم فريق متخصص بمراجعة الشكوى بعناية والاتصال بالعميل في غضون [3-5] أيام عمل لطلب أي مستندات إضافية إذا لزم الأمر."
+          },
+          response: {
+            title: "الرد على الشكوى:",
+            description: "سيتم تقديم رد رسمي للعميل في غضون [7] أيام عمل، يوضح الإجراءات المتخذة لحل المشكلة."
+          },
+          escalation: {
+            title: "إذا لم يكن العميل راضيًا عن الحل المقترح:",
+            description: "إذا لم يتم التوصل إلى حل مُرضٍ، يحق للعميل تصعيد الشكوى إلى الهيئة العامة للرقابة المالية من خلال القنوات التالية:",
+            channels: {
+              website: "الموقع الإلكتروني:",
+              email: "البريد الإلكتروني:"
+            }
+          }
+        },
+        officer: {
+          title: "مسؤول الشكاوى بالشركة:",
+          description: "لضمان التواصل الفعال والشفافية، تم تعيين [………………] كمسؤول معين للرد على الشكاوى والاستفسارات.",
+          contact: "يمكن الوصول إليه عبر البريد الإلكتروني على [………………………………..…] أو الهاتف على [……………………]."
+        },
+        closing: "في جسور لوساطة التأمين، نؤمن بأن ملاحظات عملائنا وشكاواهم توفر فرصًا قيمة لتحسين خدماتنا. نحن ملتزمون بضمان أعلى مستويات الرضا والثقة."
+      },
+      footer: {
+        address: {
+          title: "العنوان",
+          street: "10 شارع البطل أحمد عبد العزيز، المهندسين، الجيزة",
+          phone: "01044479475",
+          email: "info@jusoor.com.eg"
+        },
+        quickLinks: {
+          title: "روابط سريعة",
+          aboutUs: "من نحن",
+          contactUs: "اتصل بنا",
+          ourSolutions: "حلولنا",
+          terms: "الشروط والأحكام",
+          privacy: "سياسة الخصوصية"
+        },
+        socialMedia: {
+          title: "وسائل التواصل الاجتماعي",
+          subtitle: "دائماً على اتصال"
+        },
+        complaints: {
+          text1: "إذا كان لدى العميل شكوى، فلديه الحق في تقديمها أولاً إلى الشركة عبر رقم الهاتف 00201044479475 أو البريد الإلكتروني على",
+          text2: "أو يدوياً في المقر الرئيسي للشركة. إذا لم يتم حل الشكوى خلال الإطار الزمني المحدد، أو فشلت الشركة في معالجة الشكوى، أو لم يكن العميل راضيًا عن معالجة شكواه داخل الشركة، فلديه الحق في تصعيدها إلى الهيئة العامة للرقابة المالية من خلال موقعها الرسمي:"
+        },
+        regulation: {
+          text1: "جسور لوساطة التأمين منظمة وخاضعة لإشراف الهيئة العامة للرقابة المالية ومرخصة برقم 106. تمت الموافقة على الموقع من قبل الهيئة العامة للرقابة المالية في ../../….",
+          text2: "رقم السجل التجاري: 168676 | رقم التسجيل الضريبي: 636-084-167"
+        },
+        copyright: "حقوق النشر © 2025 جسور لوساطة التأمين - جميع الحقوق محفوظة."
+      },
+      terms: {
+        pageTitle: "الشروط والأحكام",
+        mainTitle: "إخلاء المسؤولية وشروط الاستخدام لموقع وساطة التأمين",
+        introduction: {
+          title: "المقدمة:",
+          content: "مرحباً بكم في موقع وساطة التأمين! من خلال الوصول إلى هذا الموقع، فإنك توافق على الالتزام بالشروط والأحكام التالية. يرجى قراءة هذه الشروط بعناية قبل استخدام موقعنا."
+        },
+        definitions: {
+          title: "التعريفات:",
+          client: 'تشير "العميل" و"أنت" و"الخاص بك" إليك، مستخدم هذا الموقع.',
+          company: 'تشير "الشركة" و"نحن" و"خاصتنا" و"لنا" إلى وساطة التأمين.',
+          parties: 'يشير "الطرف" أو "الأطراف" أو "نحن" إلى كل من العميل ونحن.'
+        },
+        intellectualProperty: {
+          title: "حقوق الملكية الفكرية:",
+          content: "ما لم يُذكر خلاف ذلك، تمتلك وساطة التأمين جميع حقوق الملكية الفكرية على هذا الموقع. ويشمل ذلك جميع المحتويات المكتوبة والصور والمواد الأخرى. يُمنح لك حق الوصول إلى هذه المواد للاستخدام الشخصي فقط، وفقاً للقيود المنصوص عليها في هذه الشروط."
+        },
+        restrictions: {
+          title: "القيود:",
+          republish: "لا يُسمح لك بإعادة نشر المواد من هذا الموقع.",
+          sell: "لا يُسمح لك ببيع أو تأجير أو منح تراخيص فرعية للمواد من هذا الموقع.",
+          reproduce: "لا يُسمح لك بإعادة إنتاج أو تكرار أو نسخ المواد من هذا الموقع.",
+          redistribute: "لا يُسمح لك بإعادة توزيع المحتوى من هذا الموقع."
+        },
+        userComments: {
+          title: "تعليقات المستخدمين:",
+          content: "تسمح بعض مناطق موقعنا للمستخدمين بنشر وتبادل الآراء والمعلومات. لا تقوم وساطة التأمين بتصفية أو تحرير أو نشر أو مراجعة هذه التعليقات قبل ظهورها على الموقع. الآراء المعبر عنها في التعليقات لا تعكس آراء وساطة التأمين أو وكلائها أو الشركات التابعة لها. إنها تعكس آراء ووجهات نظر المستخدمين الأفراد الذين نشروها.",
+          rights: "تحتفظ وساطة التأمين بالحق في مراقبة جميع التعليقات وإزالة أي تعليقات تُعتبر غير لائقة أو مسيئة أو تنتهك هذه الشروط."
+        },
+        warranties: {
+          title: "الضمانات والتمثيلات:",
+          intro: "من خلال نشر التعليقات على موقعنا، فإنك تضمن وتمثل ما يلي:",
+          right: "لديك الحق في نشر التعليقات ولديك جميع التراخيص والموافقات اللازمة للقيام بذلك.",
+          noInfringe: "التعليقات لا تنتهك أي حقوق ملكية فكرية لأي طرف ثالث.",
+          noDefamatory: "التعليقات لا تحتوي على أي مواد تشهيرية أو مسيئة أو فاحشة أو غير لائقة أو غير قانونية، أو تنتهك خصوصية أي شخص.",
+          noSolicitation: "لن يتم استخدام التعليقات للتماس أو الترويج للأعمال التجارية أو العادات أو الأنشطة غير القانونية."
+        },
+        cookies: {
+          title: "ملفات تعريف الارتباط:",
+          content: "يستخدم موقعنا ملفات تعريف الارتباط لتحسين تجربتك. من خلال الوصول إلى موقعنا، فإنك توافق على استخدام ملفات تعريف الارتباط وفقاً لسياسة الخصوصية الخاصة بنا."
+        },
+        hyperlinking: {
+          title: "الربط التشعبي بموقعنا:",
+          intro: "يُسمح للمؤسسات التالية بالربط بموقعنا دون موافقة كتابية مسبقة:",
+          government: "الوكالات الحكومية",
+          searchEngines: "محركات البحث",
+          news: "المؤسسات الإخبارية",
+          directories: "موزعو الأدلة الإلكترونية",
+          businesses: "الشركات المعتمدة (باستثناء المنظمات غير الربحية ومراكز التسوق الخيرية ومجموعات جمع التبرعات الخيرية)",
+          conditions: "يمكن لهذه المؤسسات الربط بصفحتنا الرئيسية أو المنشورات أو معلومات الموقع الأخرى طالما أن الرابط ليس مضللاً ولا يوحي زوراً بالرعاية ويتناسب مع سياق موقع الطرف الذي يقوم بالربط."
+        },
+        disclaimer: {
+          title: "إخلاء المسؤولية:",
+          content: "نحتفظ بالحق في تعديل هذه الشروط والأحكام في أي وقت. ويشمل ذلك الحق في إزالة أو تحرير أي محتوى من موقعنا. استمرارك في استخدام هذا الموقع بعد أي تغييرات يشكل قبولك للشروط المنقحة."
+        },
+        contact: {
+          title: "اتصل بنا:",
+          content: "إذا كان لديك أي أسئلة حول هذه الشروط والأحكام، يرجى الاتصال بنا."
         }
       }
     }

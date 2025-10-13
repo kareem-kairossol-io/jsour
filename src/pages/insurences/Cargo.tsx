@@ -6,8 +6,11 @@ import "swiper/css"
 import "swiper/css/navigation"
 import "swiper/css/pagination"
 import ContentComponent from "./ContentComponent"
+import { useTranslation } from "react-i18next"
 
-const temp = () => {
+const Temp = () => {
+    const { t } = useTranslation()
+
     return (
         <DefaultLayout>
             <Swiper
@@ -21,25 +24,25 @@ const temp = () => {
                 <SwiperSlide>
                     <div className="page-header">
                         <div className="container">
-                            <h1 className="page-title">Cargo Insurance</h1>
+                            <h1 className="page-title">{t('insuranceDetails.cargo.title')}</h1>
                         </div>
-                        <img src={Cargo} alt="" />
+                        <img src={Cargo} alt={t('insuranceDetails.cargo.title')} />
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className="page-header">
                         <div className="container">
-                            <h1 className="page-title">Cargo Insurance</h1>
+                            <h1 className="page-title">{t('insuranceDetails.cargo.title')}</h1>
                         </div>
-                        <img src={Cargo} alt="" />
+                        <img src={Cargo} alt={t('insuranceDetails.cargo.title')} />
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className="page-header">
                         <div className="container">
-                            <h1 className="page-title">Cargo Insurance</h1>
+                            <h1 className="page-title">{t('insuranceDetails.cargo.title')}</h1>
                         </div>
-                        <img src={Cargo} alt="" />
+                        <img src={Cargo} alt={t('insuranceDetails.cargo.title')} />
                     </div>
                 </SwiperSlide>
             </Swiper>
@@ -47,17 +50,15 @@ const temp = () => {
             <div className="container">
                 <ContentComponent img="/imgs/Cargo insurance.jpg" content={`
                     <div>
-                        <h2 style={{ marginTop: 32 }}>Personal & Corporate</h2>
-                        <p style={{
-                            padding: '16px 0 24px', fontSize: '16px', lineHeight: '32px'
-                        }}>
-                            Cargo insurance provides essential protection for goods in transit, whether by land, sea, or air. It covers the loss or damage of cargo during transportation, ensuring that businesses and individuals are financially protected against potential risks such as theft, accidents, natural disasters, or other unforeseen events. By securing cargo insurance, companies can safeguard their investments and ensure the smooth operation of their supply chains, while individuals can have peace of mind knowing their valuable shipments are covered. This type of insurance is crucial for mitigating financial losses and maintaining business continuity in the face of transportation-related challenges.                 </p>
+                        <h2 style="margin-top:32px">${t('insuranceDetails.cargo.subtitle')}</h2>
+                        <p style="padding:16px 0 24px; font-size:16px; line-height:32px">
+                            ${t('insuranceDetails.cargo.content')}
+                        </p>
                     </div>
                 `} />
             </div>
-
         </DefaultLayout>
     )
 }
 
-export default temp
+export default Temp

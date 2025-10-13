@@ -1,12 +1,14 @@
+import { useTranslation } from "react-i18next"
 import DefaultLayout from "../../layout/DefaultLayout"
 import claim from './../../images/claim.jpg'
 
-const temp = () => {
+const Temp = () => {
+    const {t} = useTranslation()
     return (
         <DefaultLayout>
             <div className="page-header">
                 <div className="container">
-                    <h1 className="page-title">Claim Management</h1>
+                    <h1 className="page-title">{t('solutions.claimManagement.title')}</h1>
                 </div>
                 <img src="/imgs/Claim Management.jpg" alt="" />
             </div>
@@ -14,11 +16,11 @@ const temp = () => {
                 <p style={{
                     padding: '32px 0 24px', fontSize: '16px', lineHeight: '32px'
                 }}>
-                    Jusoor offers a comprehensive claim management solution designed to expedite claim resolution and provide exceptional client support. We prioritize efficiency, transparency, and unwavering advocacy throughout the process. Our dedicated team guides clients through each step with clear communication, keeping them informed of progress and addressing any concerns.Leveraging our strong insurer relationships, we advocate tirelessly for fair and timely settlements. Furthermore, we continuously analyze claim data to identify trends and proactively mitigate future risks. Through our claim management solution, Jusoor empowers clients to navigate challenging situations with confidence, ensuring a swift recovery from unforeseen events.
+                    {t('solutions.claimManagement.content')}
                 </p>
             </div>
         </DefaultLayout>
     )
 }
 
-export default temp
+export default Temp

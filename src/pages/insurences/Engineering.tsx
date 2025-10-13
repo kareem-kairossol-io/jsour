@@ -6,8 +6,11 @@ import "swiper/css"
 import "swiper/css/navigation"
 import "swiper/css/pagination"
 import ContentComponent from "./ContentComponent"
+import { useTranslation } from "react-i18next"
 
-const temp = () => {
+const Temp = () => {
+    const { t } = useTranslation()
+    
     return (
         <DefaultLayout>
             <Swiper
@@ -21,25 +24,25 @@ const temp = () => {
                 <SwiperSlide>
                     <div className="page-header">
                         <div className="container">
-                            <h1 className="page-title">Engineering Insurance</h1>
+                            <h1 className="page-title">{t('insuranceDetails.engineering.title')}</h1>
                         </div>
-                        <img src={Engineering} alt="" />
+                        <img src={Engineering} alt={t('insuranceDetails.engineering.title')} />
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className="page-header">
                         <div className="container">
-                            <h1 className="page-title">Engineering Insurance</h1>
+                            <h1 className="page-title">{t('insuranceDetails.engineering.title')}</h1>
                         </div>
-                        <img src={Engineering} alt="" />
+                        <img src={Engineering} alt={t('insuranceDetails.engineering.title')} />
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className="page-header">
                         <div className="container">
-                            <h1 className="page-title">Engineering Insurance</h1>
+                            <h1 className="page-title">{t('insuranceDetails.engineering.title')}</h1>
                         </div>
-                        <img src={Engineering} alt="" />
+                        <img src={Engineering} alt={t('insuranceDetails.engineering.title')} />
                     </div>
                 </SwiperSlide>
             </Swiper>
@@ -47,19 +50,15 @@ const temp = () => {
             <div className="container">
                 <ContentComponent img="/imgs/Engineering insurance.jpg" content={`
                     <div>
-                        <h2 style={{ marginTop: 32 }}>Personal & Corporate</h2>
-                        <p style={{
-                            padding: '16px 0 24px', fontSize: '16px', lineHeight: '32px'
-                        }}>
-                            Engineering insurance provides comprehensive coverage for a wide range of engineering projects and equipment, ensuring protection against potential risks such as accidental damage, mechanical breakdown, and third-party liability. This type of insurance is crucial for construction companies, contractors, and engineering firms, as it covers machinery, plant, and equipment used in construction and operational phases. Additionally, it includes coverage for project-related risks like delays, design defects, and natural disasters. By securing engineering insurance, businesses can safeguard their investments, ensure project continuity, and mitigate financial losses, ultimately enhancing their operational resilience and financial stability.
+                        <h2 style="margin-top:32px">${t('insuranceDetails.engineering.subtitle')}</h2>
+                        <p style="padding:16px 0 24px; font-size:16px; line-height:32px">
+                            ${t('insuranceDetails.engineering.content')}
                         </p>
                     </div>
                 `} />
             </div>
-
-
         </DefaultLayout>
     )
 }
 
-export default temp
+export default Temp

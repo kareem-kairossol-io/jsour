@@ -6,8 +6,11 @@ import "swiper/css"
 import "swiper/css/navigation"
 import "swiper/css/pagination"
 import ContentComponent from "./ContentComponent"
+import { useTranslation } from "react-i18next"
 
-const temp = () => {
+const Temp = () => {
+    const { t } = useTranslation()
+    
     return (
         <DefaultLayout>
             <Swiper
@@ -21,25 +24,25 @@ const temp = () => {
                 <SwiperSlide>
                     <div className="page-header">
                         <div className="container">
-                            <h1 className="page-title">Aviation Insurance</h1>
+                            <h1 className="page-title">{t('insuranceDetails.aviation.title')}</h1>
                         </div>
-                        <img src={Aviation} alt="" />
+                        <img src={Aviation} alt={t('insuranceDetails.aviation.title')} />
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className="page-header">
                         <div className="container">
-                            <h1 className="page-title">Aviation Insurance</h1>
+                            <h1 className="page-title">{t('insuranceDetails.aviation.title')}</h1>
                         </div>
-                        <img src={Aviation} alt="" />
+                        <img src={Aviation} alt={t('insuranceDetails.aviation.title')} />
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className="page-header">
                         <div className="container">
-                            <h1 className="page-title">Aviation Insurance</h1>
+                            <h1 className="page-title">{t('insuranceDetails.aviation.title')}</h1>
                         </div>
-                        <img src={Aviation} alt="" />
+                        <img src={Aviation} alt={t('insuranceDetails.aviation.title')} />
                     </div>
                 </SwiperSlide>
             </Swiper>
@@ -47,18 +50,15 @@ const temp = () => {
             <div className="container">
                 <ContentComponent img="/2151582550.jpg" content={`
                     <div>
-                        <h2 style={{ marginTop: 32 }}>Personal & Corporate</h2>
-                        <p style={{
-                            padding: '16px 0 24px', fontSize: '16px', lineHeight: '32px'
-                        }}>
-                            Aviation insurance provides specialized coverage for aircraft, protecting owners and operators against a variety of risks associated with aviation. This includes coverage for physical damage to the aircraft, liability for passenger injuries, third-party damage, and loss of cargo. Aviation insurance is essential for ensuring the financial security of airlines, private aircraft owners, and aviation-related businesses, as it helps manage the substantial risks involved in operating and maintaining aircraft. By securing aviation insurance, stakeholders in the aviation industry can safeguard their assets, maintain operational continuity, and comply with regulatory requirements, ensuring peace of mind and financial stability.
+                        <h2 style="margin-top:32px">${t('insuranceDetails.aviation.subtitle')}</h2>
+                        <p style="padding:16px 0 24px; font-size:16px; line-height:32px">
+                            ${t('insuranceDetails.aviation.content')}
                         </p>
                     </div>
                 `} />
             </div>
-
         </DefaultLayout>
     )
 }
 
-export default temp
+export default Temp

@@ -4,6 +4,8 @@ import { Swiper, SwiperSlide } from "swiper/react"
 import { Autoplay } from "swiper/modules"
 import "swiper/css"
 import "./partener.css"
+import { t } from "i18next"
+import { useTranslation } from "react-i18next"
 
 const partners = Array.from({ length: 12 }, (_, i) => ({
   name: `Partner ${i + 1}`,
@@ -11,10 +13,11 @@ const partners = Array.from({ length: 12 }, (_, i) => ({
 }))
 
 export default function PartnersSection() {
+  const translate = useTranslation().t
   return (
     <section className="partners-section">
       <div className="partners-container">
-        <h2 className="partners-title">Our Partners</h2>
+        <h2 className="partners-title">{translate('ourPartenerTitle')}</h2>
 
         <div className="partners-slider">
           <Swiper

@@ -22,6 +22,10 @@ html {
   font-family: "Noto Kufi Arabic", sans-serif !important
 }
 
+[dir="rtl"] .icon-tabler-chevron-right {
+  transform: rotate(180deg);
+}
+
 .container {
   width: 100%;
   padding-right: 16px;

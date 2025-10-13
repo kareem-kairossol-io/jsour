@@ -6,8 +6,11 @@ import "swiper/css"
 import "swiper/css/navigation"
 import "swiper/css/pagination"
 import ContentComponent from "./ContentComponent"
+import { useTranslation } from "react-i18next"
 
-const temp = () => {
+const Temp = () => {
+    const { t } = useTranslation()
+    
     return (
         <DefaultLayout>
             <Swiper
@@ -21,25 +24,25 @@ const temp = () => {
                 <SwiperSlide>
                     <div className="page-header">
                         <div className="container">
-                            <h1 className="page-title">Fire and allied perils insurance</h1>
+                            <h1 className="page-title">{t('insuranceDetails.fire.title')}</h1>
                         </div>
-                        <img src={Fire} alt="" />
+                        <img src={Fire} alt={t('insuranceDetails.fire.title')} />
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className="page-header">
                         <div className="container">
-                            <h1 className="page-title">Fire and allied perils insurance</h1>
+                            <h1 className="page-title">{t('insuranceDetails.fire.title')}</h1>
                         </div>
-                        <img src={Fire} alt="" />
+                        <img src={Fire} alt={t('insuranceDetails.fire.title')} />
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className="page-header">
                         <div className="container">
-                            <h1 className="page-title">Fire and allied perils insurance</h1>
+                            <h1 className="page-title">{t('insuranceDetails.fire.title')}</h1>
                         </div>
-                        <img src={Fire} alt="" />
+                        <img src={Fire} alt={t('insuranceDetails.fire.title')} />
                     </div>
                 </SwiperSlide>
             </Swiper>
@@ -47,11 +50,9 @@ const temp = () => {
             <div className="container">
                 <ContentComponent img="/1362.jpg" content={`
                     <div>
-                        <h2 style={{ marginTop: 32 }}>Personal & Corporate</h2>
-                        <p style={{
-                            padding: '16px 0 24px', fontSize: '16px', lineHeight: '32px'
-                        }}>
-                            Fire and allied perils insurance provides essential protection against damage and losses caused by fire and related hazards. This type of insurance covers risks such as fire, lightning, explosion, and impact damage from vehicles or aircraft, ensuring comprehensive protection for properties, both residential and commercial. It also often includes coverage for additional perils like natural disasters, riots, strikes, and malicious damage. By securing fire and allied perils insurance, property owners can safeguard their investments, mitigate financial losses, and ensure the continuity of their operations. This insurance is crucial for maintaining financial stability and peace of mind in the face of unexpected disasters.
+                        <h2 style="margin-top:32px">${t('insuranceDetails.fire.subtitle')}</h2>
+                        <p style="padding:16px 0 24px; font-size:16px; line-height:32px">
+                            ${t('insuranceDetails.fire.content')}
                         </p>
                     </div>
                 `} />
@@ -60,4 +61,4 @@ const temp = () => {
     )
 }
 
-export default temp
+export default Temp
