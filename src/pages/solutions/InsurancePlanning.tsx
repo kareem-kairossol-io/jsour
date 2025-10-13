@@ -1,12 +1,15 @@
+import { useTranslation } from "react-i18next"
 import DefaultLayout from "../../layout/DefaultLayout"
-import inssurance from './../../images/inssurance.jpg'
 
-const temp = () => {
+const Temp = () => {
+    const {t} = useTranslation()
     return (
         <DefaultLayout>
             <div className="page-header">
                 <div className="container">
-                    <h1 className="page-title">Insurance Planning</h1>
+                    <h1 className="page-title">
+                        {t("solutions.insurancePlanning.title")}
+                    </h1>
                 </div>
                 <img src="/imgs/Insurance planning.jpg" alt="" />
             </div>
@@ -14,11 +17,11 @@ const temp = () => {
                 <p style={{
                     padding: '32px 0 24px', fontSize: '16px', lineHeight: '32px'
                 }}>
-                    Jusoor empowers individuals and organizations to safeguard their assets and navigate life's uncertainties with confidence. Through comprehensive insurance planning, we help you mitigate potential financial losses from unforeseen events like accidents, illnesses, natural disasters, and liabilities. Our approach involves a systematic assessment of your current and future needs. We identify the most suitable insurance coverage options, ensuring your policies adapt to changing circumstances. Effective insurance planning offers peace of mind. More importantly, it serves as a proactive strategy to maintain financial stability and protect your long-term financial goals. Whether it's securing life, health, property, liability, or any other form of insurance, a thoughtful approach to insurance planning with Jusoor can make a significant difference.
+                    {t("solutions.insurancePlanning.content")}
                 </p>
             </div>
         </DefaultLayout>
     )
 }
 
-export default temp
+export default Temp

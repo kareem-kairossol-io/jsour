@@ -5,6 +5,7 @@ import { motion } from "framer-motion"
 import { Swiper, SwiperSlide } from "swiper/react"
 import { Navigation, Pagination, Autoplay, EffectFade } from "swiper/modules"
 import { ChevronRight, ChevronLeft } from "lucide-react"
+import { useTranslation } from "react-i18next"
 import "./home-slider.css"
 
 // Import Swiper styles
@@ -14,69 +15,6 @@ import "swiper/css/pagination"
 import "swiper/css/effect-fade"
 import { Link } from "react-router-dom"
 import DOMPurify from "dompurify"
-
-const heroSlides = [
-  {
-    id: 1,
-    title: "We build trust to <br> secure your future",
-    subtitle: "Protect Your Property",
-    description: "Your partner at every step toward security.",
-    link: "/Fire-Insurance",
-    image: "/imgs/slider 1.jpg",
-    buttonText: "Get Quote",
-    bgGradient: "linear-gradient(to right, rgba(127, 29, 29, 0.7), rgba(154, 52, 18, 0.7))",
-  },
-  {
-    id: 2,
-    title: "Shield of Trust",
-    subtitle: "Secure Your Shipments",
-    description: "Protecting your business with trust and expertise.",
-    link: "/Cargo-Insurance",
-    image: "/imgs/Slider 2.jpg",
-    buttonText: "Learn More",
-    bgGradient: "linear-gradient(to right, rgba(30, 58, 138, 0.7), rgba(21, 94, 117, 0.7))",
-  },
-  {
-    id: 3,
-    title: "Smart Coverage. <br> Real Protection.",
-    subtitle: "Your Health, Our Priority",
-    description: "Innovative insurance solutions tailored to your needs.",
-    link: "/Medical-Insurance",
-    image: "/imgs/Slider 3.jpg",
-    buttonText: "Explore Plans",
-    bgGradient: "linear-gradient(to right, rgba(20, 83, 45, 0.7), rgba(6, 95, 70, 0.7))",
-  },
-  {
-    id: 4,
-    title: "Protecting <br> What Matters Most",
-    subtitle: "Industrial Protection Solutions",
-    description: "We are here for you, Your family And your business.",
-    link: "/Engineering-Insurance",
-    image: "/imgs/Slider 4.jpg",
-    buttonText: "Get Coverage",
-    bgGradient: "linear-gradient(to right, rgba(154, 52, 18, 0.7), rgba(146, 64, 14, 0.7))",
-  },
-  {
-    id: 5,
-    title: "Because Every Risk Deserves a Strategy",
-    subtitle: "Secure Your Legacy",
-    description: "Well-crafted plans to face every challenge.",
-    link: "/Life-Insurance",
-    image: "/imgs/Slider 5.png",
-    buttonText: "Start Today",
-    bgGradient: "linear-gradient(to right, rgba(88, 28, 135, 0.7), rgba(67, 56, 202, 0.7))",
-  },
-  {
-    id: 6,
-    title: "We Cover. You Prosper.",
-    subtitle: "Drive with Confidence",
-    description: "Your security is the path to your success.",
-    link: "/Motor-Insurance",
-    image: "/imgs/Slider 6.jpg",
-    buttonText: "Get Insured",
-    bgGradient: "linear-gradient(to right, rgba(67, 56, 202, 0.7), rgba(37, 99, 235, 0.7))",
-  },
-]
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 60 },
@@ -106,9 +44,50 @@ const slideInRight = {
 }
 
 export default function HeroInsuranceSlider() {
+  const { t } = useTranslation()
   const [activeSlide, setActiveSlide] = useState(0)
   const [hasAnimated, setHasAnimated] = useState(false)
   const sectionRef = useRef(null)
+
+  // Slide data with links and images (these don't need translation)
+  const heroSlidesData = [
+    {
+      id: 1,
+      link: "/Fire-Insurance",
+      image: "/imgs/slider 1.jpg",
+      bgGradient: "linear-gradient(to right, rgba(127, 29, 29, 0.7), rgba(154, 52, 18, 0.7))",
+    },
+    {
+      id: 2,
+      link: "/Cargo-Insurance",
+      image: "/imgs/Slider 2.jpg",
+      bgGradient: "linear-gradient(to right, rgba(30, 58, 138, 0.7), rgba(21, 94, 117, 0.7))",
+    },
+    {
+      id: 3,
+      link: "/Medical-Insurance",
+      image: "/imgs/Slider 3.jpg",
+      bgGradient: "linear-gradient(to right, rgba(20, 83, 45, 0.7), rgba(6, 95, 70, 0.7))",
+    },
+    {
+      id: 4,
+      link: "/Engineering-Insurance",
+      image: "/imgs/Slider 4.jpg",
+      bgGradient: "linear-gradient(to right, rgba(154, 52, 18, 0.7), rgba(146, 64, 14, 0.7))",
+    },
+    {
+      id: 5,
+      link: "/Life-Insurance",
+      image: "/imgs/Slider 5.png",
+      bgGradient: "linear-gradient(to right, rgba(88, 28, 135, 0.7), rgba(67, 56, 202, 0.7))",
+    },
+    {
+      id: 6,
+      link: "/Motor-Insurance",
+      image: "/imgs/Slider 6.jpg",
+      bgGradient: "linear-gradient(to right, rgba(67, 56, 202, 0.7), rgba(37, 99, 235, 0.7))",
+    },
+  ]
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -157,58 +136,64 @@ export default function HeroInsuranceSlider() {
         onSlideChange={(swiper: any) => setActiveSlide(swiper.activeIndex)}
         className="hero-swiper"
       >
-        {heroSlides.map((slide, index) => (
-          <SwiperSlide key={slide.id}>
-            <div className="slide-container">
-              {/* Background Image */}
-              <div
-                className="slide-background">
-                <img src={slide.image} alt={`Slide ${index + 1}`} className="background-image" />
-              </div>
+        {heroSlidesData.map((slide, index) => {
+          // Get translations for this specific slide
+          const slideContent = t(`slider.slides.${index}`, { returnObjects: true }) as any
 
-              {/* Overlay */}
-              <div className="slide-overlay" style={{ background: slide.bgGradient }} />
+          return (
+            <SwiperSlide key={slide.id}>
+              <div className="slide-container">
+                {/* Background Image */}
+                <div className="slide-background">
+                  <img src={slide.image} alt={`Slide ${index + 1}`} className="background-image" />
+                </div>
 
-              {/* Content */}
-              <div className="slide-content">
-                <div className="container">
-                  <div className="content-wrapper">
-                    <motion.div
-                      key={`slide-${index}`}
-                      initial="hidden"
-                      animate={activeSlide === index ? "visible" : "hidden"}
-                      variants={slideInLeft}
-                      className="text-content"
-                    >
-                      <motion.h1
+                {/* Overlay */}
+                <div className="slide-overlay" style={{ background: slide.bgGradient }} />
+
+                {/* Content */}
+                <div className="slide-content">
+                  <div className="container">
+                    <div className="content-wrapper">
+                      <motion.div
+                        key={`slide-${index}`}
+                        initial="hidden"
+                        animate={activeSlide === index ? "visible" : "hidden"}
                         variants={slideInLeft}
-                        className="title"
-                        dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(slide.title) }}
-                      />
-                      {/* Description */}
-                      <motion.p variants={slideInRight} className="description">
-                        {slide.description}
-                      </motion.p>
+                        className="text-content"
+                      >
+                        <motion.h1
+                          variants={slideInLeft}
+                          className="title"
+                          dangerouslySetInnerHTML={{ 
+                            __html: DOMPurify.sanitize(slideContent?.title || '') 
+                          }}
+                        />
+                        {/* Description */}
+                        <motion.p variants={slideInRight} className="description">
+                          {slideContent?.description || ''}
+                        </motion.p>
 
-                      {/* Buttons
-                      <motion.div variants={fadeInUp} className="button-group">
-                        <Link to={slide.link} style={{ textDecoration: "none" }}>
-                          <button className="primary-button">
-                            {slide.buttonText}
-                            <ChevronRight className="button-icon" />
-                          </button>
-                        </Link>
-                      </motion.div> */}
-                    </motion.div>
+                        {/* Buttons - Uncomment if needed
+                        <motion.div variants={fadeInUp} className="button-group">
+                          <Link to={slide.link} style={{ textDecoration: "none" }}>
+                            <button className="primary-button">
+                              {slideContent?.buttonText || ''}
+                              <ChevronRight className="button-icon" />
+                            </button>
+                          </Link>
+                        </motion.div> */}
+                      </motion.div>
+                    </div>
                   </div>
                 </div>
-              </div>
 
-              {/* Decorative Elements */}
-              <div className="bottom-gradient" />
-            </div>
-          </SwiperSlide>
-        ))}
+                {/* Decorative Elements */}
+                <div className="bottom-gradient" />
+              </div>
+            </SwiperSlide>
+          )
+        })}
       </Swiper>
 
       {/* Custom Navigation */}
@@ -224,7 +209,7 @@ export default function HeroInsuranceSlider() {
       <div className="slide-counter">
         <span className="current-slide">{String(activeSlide + 1).padStart(2, "0")}</span>
         <span className="separator">/</span>
-        <span className="total-slides">{String(heroSlides.length).padStart(2, "0")}</span>
+        <span className="total-slides">{String(heroSlidesData.length).padStart(2, "0")}</span>
       </div>
 
       {/* Social Links */}

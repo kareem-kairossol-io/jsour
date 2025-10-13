@@ -6,6 +6,11 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import { PersistGate } from 'redux-persist/integration/react';
 import store, { persistor } from './store';
 import { Provider } from 'react-redux';
+import './i18n/config'
+
+const savedLanguage = localStorage.getItem('language') || 'en';
+document.documentElement.dir = savedLanguage === 'ar' ? 'rtl' : 'ltr';
+document.documentElement.lang = savedLanguage;
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
