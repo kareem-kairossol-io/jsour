@@ -206,7 +206,12 @@ const resources = {
           name: "Your Name", 
           subject: "Subject",
           message: "Message",
-          button: "Send Message"
+          button: "Send Message",
+          sending: "Sending...",
+          success: "Your message has been sent successfully!",
+          error: "Failed to send message. Please try again later.",
+          recaptchaError: "Please complete the reCAPTCHA verification.",
+          fillAllFields: "Please fill in all required fields."
         }
       },
       about: {
@@ -701,7 +706,12 @@ const resources = {
           name: "اسمك",
           subject: "الموضوع",
           message: "الرسالة",
-          button: "إرسال الرسالة"
+          button: "إرسال الرسالة",
+          sending: "جاري الإرسال...",
+          success: "تم إرسال رسالتك بنجاح! سنتواصل معك قريباً.",
+          error: "حدث خطأ أثناء إرسال الرسالة. يرجى المحاولة مرة أخرى.",
+          recaptchaError: "يرجى التحقق من اختبار reCAPTCHA.",
+          fillAllFields: "يرجى ملء جميع الحقول المطلوبة."
         }
       },
       about: {
