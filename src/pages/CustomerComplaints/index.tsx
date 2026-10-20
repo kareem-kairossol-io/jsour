@@ -25,7 +25,9 @@ const CustomerComplaints = () => {
                     </li>
                     <li>
                         {t('customerComplaints.procedures.submitting.channels.phone')}{' '}
-                        <a href="tel:+201044479475">002 0104 447 9475</a>
+                        <a href="tel:+201044479475" style={{ direction: 'ltr', display: 'inline-block' }}>
+                            002 0104 447 9475
+                        </a>
                     </li>
                     <li>
                         {t('customerComplaints.procedures.submitting.channels.office')}{' '}

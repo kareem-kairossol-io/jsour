@@ -26,6 +26,7 @@ import { FreeMode, Autoplay } from "swiper/modules";
 import { Link } from "react-router-dom";
 import HeroInsuranceSlider from "./homeSlider";
 import PartnersSection from "./partener-slider";
+import FaqSection from "./FaqSection";
 import { useTranslation } from "react-i18next";
 
 const Home = () => {
@@ -194,7 +195,8 @@ const Home = () => {
         </div>
       </motion.section>
 
-    <PartnersSection />
+      <PartnersSection />
+      <FaqSection />
     </DefaultLayout>
   );
 };

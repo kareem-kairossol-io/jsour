@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import './Footer.css';
 import logo from './../../images/Jlogo-footer.webp';
+import qrCode from './../../images/qr-code.png';
 
 const Footer = () => {
     const { t } = useTranslation();
@@ -14,6 +15,10 @@ const Footer = () => {
                     <h1>
                         <img className="footer-logo" src={logo} alt="Jusoor Logo" />
                     </h1>
+                </div>
+                
+                <div className="footer-section" style={{ display: 'flex', alignItems: 'center' }}>
+                    <img className="footer-qr" src={qrCode} alt="Jusoor QR Code" />
                 </div>
                 
                 <div className="footer-section">

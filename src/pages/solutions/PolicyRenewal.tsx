@@ -8,7 +8,6 @@ const Temp = () => {
         <DefaultLayout>
             <div className="page-header">
                 <div className="container">
-                    <h1 className="page-title">{t('solutions.policyRenewal.content')}</h1>
                 </div>
                 <img src="imgs/Policy Renewal.jpg" alt="" />
             </div>

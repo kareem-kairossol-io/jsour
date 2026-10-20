@@ -21,6 +21,16 @@
     height: 170px;
     margin-top: 15px;
   }
+
+  .footer-qr {
+    width: 140px;
+    height: 140px;
+    background-color: #fff;
+    padding: 6px;
+    border-radius: 8px;
+    display: block;
+    object-fit: contain;
+  }
   
   .footer-heading {
     color: #fff;

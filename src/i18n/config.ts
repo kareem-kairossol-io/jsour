@@ -14,7 +14,7 @@ const resources = {
         customerComplaints: "Customer Complaints",
         contact: "Contact Us",
         language: "English",
-        address: "10 El-Batal Ahmed Abd El-Aziz Street, Mohandessin, Giza"
+        address: "10 El-Batal Ahmed Abd El-Aziz, Dokki, Giza   "
       },
       insurance: {
         life: "Life Insurance",
@@ -304,12 +304,17 @@ const resources = {
       customerRights: {
         title: "Customer Rights",
         consumerGuide: "Consumer Guide",
-        description: "A right owned by the consumer with any person or entity, whether a private company or a government institution, to know his rights. And because in Jusoor the focus of our attention is the customer and his satisfaction stems from within all employees and those in charge of decision-making in Jusoor Company, clarifying all methods and transactions to the customer in the event of his dissatisfaction with the service or the product. All communication channels are available with the customer from us internally as we say Jusoor Always Listening so we are ready to contact us. In the event that the client is dissatisfied with any process or procedure, he has the right to contact the Financial Regulatory Authority.",
-        satisfaction: "Your satisfaction, we always work to improve our procedures and process",
-        note: "Note:",
-        fra: "The Financial Regulatory Authority",
-        guideInfo: "Created this guide to provide important information to insurance policy holders.",
-        readBelow: "You can read it below or",
+        consumerGuideP1: "At Jusoor Insurance Brokerage, we believe that protecting our clients’ rights and earning their trust are fundamental to the way we deliver our services. We are committed to promoting transparency and clarity, and to providing clients with the information they need to understand their rights and obligations in relation to insurance services, enabling them to make informed insurance decisions.",
+        consumerGuideP2: "We also value our clients’ feedback, listen carefully to their concerns, and continuously strive to enhance the quality of our services and improve our procedures to better meet their needs and expectations.",
+        satisfaction: "Your satisfaction is our priority. Continuous improvement is our commitment.",
+        protectionGuide: "Insurance Policyholders’ Protection Guide",
+        protectionGuideP1: "The Financial Regulatory Authority (FRA) has issued the Insurance Policyholders’ Protection Guide to raise awareness of policyholders’ rights and provide guidance on the principles and practices designed to protect their insurance interests.",
+        protectionGuideP2: "You can access the official guide through the link below or download it for future reference.",
+        fra: "Financial Regulatory Authority (FRA):",
+        fraLink: "View the Insurance Policyholders’ Protection Guide",
+        complaintsPrefix: "For inquiries or to submit a complaint, please visit the ",
+        complaintsLinkText: "Customer Complaints",
+        complaintsSuffix: " section of the Jusoor website.",
         download: "Download"
       },
       customerComplaints: {
@@ -357,8 +362,8 @@ const resources = {
       },
       footer: {
         address: {
-          title: "Address",
-          street: "10 El-Batal Ahmed Abd El-Aziz Street, Mohandessin, Giza",
+          title: "Contact Information",
+          street: "10 El-Batal Ahmed Abd El-Aziz, Dokki, Giza   ",
           phone: "01044479475",
           email: "info@jusoor.com.eg"
         },
@@ -445,7 +450,52 @@ const resources = {
             title: "Contact Us:",
             content: "If you have any questions about these terms and conditions, please contact us."
           }
-        }
+        },
+      faqs: {
+        title: "Frequently Asked Questions",
+        items: [
+          {
+            question: "What is Jusoor for Insurance Brokerage?",
+            answer: "Jusoor Insurance Brokerage is a company specializing in insurance brokerage. We help clients identify their insurance needs and explore suitable insurance solutions and coverage options by providing professional support and coordinating with insurance companies according to each client's requirements and business activities."
+          },
+          {
+            question: "What insurance services does Jusoor provide?",
+            answer: "Jusoor provides brokerage services across a range of insurance lines, including marine insurance, hull and cargo insurance, engineering insurance, property and fire and allied perils insurance, motor insurance, medical insurance, life insurance, aviation insurance, oil and gas insurance, cyber risk insurance, credit risk insurance, and other available insurance covers based on clients' needs."
+          },
+          {
+            question: "What types of insurance can Jusoor help me obtain?",
+            answer: "Jusoor assists individuals, companies, and institutions in identifying insurance options suitable for their needs, business activities, and risk exposures. Suitable coverage is determined based on the client's requirements, the terms and conditions of the relevant insurance companies, and the availability of the requested coverage."
+          },
+          {
+            question: "How can I request an insurance quotation?",
+            answer: "You can contact Jusoor using the contact details provided on our website or submit an inquiry through the contact form. Please include the type of insurance required, details of the relevant business or activity, and other basic information related to your request. Our team will contact you to identify the necessary information and documentation and follow up on your inquiry."
+          },
+          {
+            question: "What information and documents are required to obtain an insurance quotation?",
+            answer: "The required information and documentation depend on the type of insurance and the risk to be covered. These may include client or company details, a description of the business activity or property to be insured, insured values, requested coverage details, and any technical documents or additional information required for the specific insurance class. Our team will advise you of the applicable requirements for your case."
+          },
+          {
+            question: "Does Jusoor work with multiple insurance companies?",
+            answer: "As an insurance broker, Jusoor assesses clients' insurance needs and coordinates with suitable insurance companies based on the required insurance class, requested coverage, and availability. Available options are presented subject to the terms, conditions, and pricing offered by the relevant insurance companies."
+          },
+          {
+            question: "How can I inquire about or follow up on my insurance policy?",
+            answer: "You can contact Jusoor through the official contact details provided on our website. Please include your policy number, if available, the type of insurance, and the subject of your inquiry. Providing relevant basic information helps us review your request and direct it to the appropriate team member."
+          },
+          {
+            question: "How can I contact Jusoor?",
+            answer: "You can contact Jusoor Insurance Brokerage using the telephone numbers, email address, and office address provided on the Contact Us page of our website. You may also submit your inquiry through the online contact form. Please ensure that your contact details are accurate so that our team can respond to you."
+          },
+          {
+            question: "How can I submit a complaint?",
+            answer: "You can submit a complaint to Jusoor through the channels listed on the Customer Complaints page of our website. Please provide details of the complaint and the information necessary for its review. The company receives and handles complaints in accordance with its established procedures. If the complaint remains unresolved or you are dissatisfied with its handling, you may escalate it to the Financial Regulatory Authority (FRA), in accordance with the applicable rules and procedures."
+          },
+          {
+            question: "How can I learn about my rights as an insurance customer?",
+            answer: "You can visit the Customer Rights page on our website to review information about customer rights and access the relevant consumer protection guide issued by the Financial Regulatory Authority (FRA). We recommend reviewing your insurance policy's terms, coverage, exclusions, and limits of liability before making an insurance decision."
+          }
+        ]
+      }
     }
   },
   ar: {
@@ -459,7 +509,7 @@ const resources = {
         customerComplaints: "شكاوى العملاء",
         contact: "اتصل بنا",
         language: "العربية",
-        address: "10 شارع البطل أحمد عبد العزيز، المهندسين، الجيزة"
+        address: "10 شارع البطل أحمد عبد العزيز، الدقى، الجيزة.   "
       },
       insurance: {
         life: "التأمين على الحياة",
@@ -751,12 +801,17 @@ const resources = {
       customerRights: {
         title: "حقوق العملاء",
         consumerGuide: "دليل المستهلك",
-        description: "حق يملكه المستهلك مع أي شخص أو كيان، سواء كانت شركة خاصة أو مؤسسة حكومية، لمعرفة حقوقه. ولأن التركيز في جسور هو العميل ورضاه ينبع من داخل جميع الموظفين والمسؤولين عن صنع القرار في شركة جسور، نوضح جميع الأساليب والمعاملات للعميل في حالة عدم رضاه عن الخدمة أو المنتج. جميع قنوات الاتصال متاحة مع العميل من قبلنا داخليًا كما نقول جسور دائمًا تستمع لذلك نحن جاهزون للاتصال بنا. في حالة عدم رضا العميل عن أي عملية أو إجراء، له الحق في الاتصال بالهيئة العامة للرقابة المالية.",
-        satisfaction: "رضاك، نعمل دائمًا على تحسين إجراءاتنا وعملياتنا",
-        note: "ملاحظة:",
-        fra: "الهيئة العامة للرقابة المالية",
-        guideInfo: "أنشأت هذا الدليل لتقديم معلومات مهمة لحاملي وثائق التأمين.",
-        readBelow: "يمكنك قراءته أدناه أو",
+        consumerGuideP1: "تؤمن شركة جسور للوساطة التأمينية بأن حماية حقوق العملاء وتعزيز ثقتهم يمثلان ركيزة أساسية في تقديم خدماتها. ومن هذا المنطلق، تحرص الشركة على ترسيخ مبادئ الشفافية والوضوح، وتوفير المعلومات اللازمة للعملاء لمساعدتهم على فهم حقوقهم والتزاماتهم المتعلقة بالخدمات التأمينية، بما يدعم اتخاذ قرارات تأمينية واعية ومستنيرة.",
+        consumerGuideP2: "كما تلتزم جسور بالاستماع إلى عملائها، والاهتمام بملاحظاتهم، والعمل المستمر على تطوير جودة خدماتها وتحسين إجراءاتها بما يتماشى مع احتياجاتهم وتوقعاتهم.",
+        satisfaction: "رضاكم غايتنا، والتحسين المستمر التزامنا.",
+        protectionGuide: "دليل حماية حملة وثائق التأمين",
+        protectionGuideP1: "أصدرت الهيئة العامة للرقابة المالية دليل حماية حملة وثائق التأمين بهدف توعية العملاء بحقوقهم وتعريفهم بالمبادئ والإرشادات المتعلقة بحماية مصالحهم التأمينية.",
+        protectionGuideP2: "يمكنكم الاطلاع على الدليل من خلال الرابط الرسمي للهيئة أدناه، أو تنزيله للاحتفاظ به والرجوع إليه عند الحاجة.",
+        fra: "الهيئة العامة للرقابة المالية (FRA):",
+        fraLink: "الاطلاع على دليل حماية حملة وثائق التأمين",
+        complaintsPrefix: "للاستفسارات أو لتقديم شكوى، يرجى زيارة صفحة ",
+        complaintsLinkText: "شكاوى العملاء",
+        complaintsSuffix: " من خلال الموقع الإلكتروني لشركة جسور.",
         download: "تحميل"
       },
       customerComplaints: {
@@ -804,8 +859,8 @@ const resources = {
       },
       footer: {
         address: {
-          title: "العنوان",
-          street: "10 شارع البطل أحمد عبد العزيز، المهندسين، الجيزة",
+          title: "بيانات التواصل",
+          street: "10 شارع البطل أحمد عبد العزيز، الدقى، الجيزة.   ",
           phone: "01044479475",
           email: "info@jusoor.com.eg"
         },
@@ -890,6 +945,51 @@ const resources = {
           title: "اتصل بنا:",
           content: "إذا كان لديك أي أسئلة حول هذه الشروط والأحكام، يرجى الاتصال بنا."
         }
+      },
+      faqs: {
+        title: "الأسئلة الشائعة",
+        items: [
+          {
+            question: "ما هي شركة جسور للوساطة التأمينية؟",
+            answer: "شركة جسور للوساطة التأمينية هي شركة متخصصة في الوساطة التأمينية، تعمل على مساعدة العملاء في تحديد احتياجاتهم التأمينية والتعرف على الحلول والتغطيات المناسبة لهم، من خلال تقديم الدعم المهني والتنسيق مع شركات التأمين، بما يتوافق مع طبيعة كل نشاط واحتياجات كل عميل."
+          },
+          {
+            question: "ما الخدمات التأمينية التي تقدمها جسور؟",
+            answer: "تقدم جسور خدمات الوساطة في مجموعة متنوعة من فروع التأمين، تشمل التأمين البحري، وتأمين أجسام السفن والبضائع، والتأمين الهندسي، وتأمين الممتلكات والحريق والأخطار الإضافية، وتأمين السيارات، والتأمين الطبي، وتأمينات الحياة، وتأمين الطيران، وتأمين النفط والغاز، والتأمين ضد المخاطر الإلكترونية ومخاطر عدم السداد، وغيرها من التغطيات التأمينية المتاحة وفقاً لاحتياجات العملاء."
+          },
+          {
+            question: "ما أنواع التأمين التي يمكن لجسور المساعدة في توفيرها؟",
+            answer: "تساعد جسور العملاء في التعرف على أنواع التأمين المناسبة للأفراد والشركات والمؤسسات، وفقاً لطبيعة النشاط والمخاطر المطلوب تغطيتها. ويتم تحديد التغطيات المناسبة بناءً على احتياجات العميل وشروط شركات التأمين ومدى توافر التغطية المطلوبة."
+          },
+          {
+            question: "كيف يمكنني طلب عرض تأميني؟",
+            answer: "يمكنكم التواصل مع شركة جسور من خلال بيانات الاتصال المنشورة على الموقع الإلكتروني، أو إرسال استفسار عبر نموذج التواصل، مع توضيح نوع التأمين المطلوب وطبيعة النشاط والبيانات الأساسية ذات الصلة. وسيقوم فريق الشركة بالتواصل معكم لتحديد المعلومات والمستندات اللازمة ومتابعة طلبكم."
+          },
+          {
+            question: "ما المعلومات والمستندات المطلوبة للحصول على عرض تأميني؟",
+            answer: "تختلف المعلومات والمستندات المطلوبة بحسب نوع التأمين وطبيعة الخطر المراد تغطيته. وقد تشمل بيانات العميل أو الشركة، ووصف النشاط أو الممتلكات المطلوب تأمينها، والقيم التأمينية، وتفاصيل التغطية المطلوبة، وأي مستندات فنية أو بيانات إضافية تستلزمها طبيعة التأمين. وسيتم إبلاغكم بالمتطلبات اللازمة وفقاً لكل حالة."
+          },
+          {
+            question: "هل تتعامل جسور مع شركات تأمين متعددة؟",
+            answer: "تعمل جسور في مجال الوساطة التأمينية، وتقوم بدراسة احتياجات العملاء والتنسيق مع شركات التأمين المناسبة بحسب نوع التأمين والتغطيات المطلوبة ومدى توافرها. ويتم عرض الحلول المتاحة وفقاً للشروط والأحكام والأسعار التي تقدمها شركات التأمين المعنية."
+          },
+          {
+            question: "كيف يمكنني الاستفسار عن وثيقة التأمين الخاصة بي أو طلب متابعتها؟",
+            answer: "يمكنكم التواصل مع شركة جسور عبر بيانات الاتصال الرسمية المنشورة على الموقع، مع توضيح رقم الوثيقة، إن وجد، ونوع التأمين وموضوع الاستفسار. ويساعد تقديم البيانات الأساسية ذات الصلة على تسهيل مراجعة الطلب وتوجيهه إلى المسؤول المختص."
+          },
+          {
+            question: "كيف يمكنني التواصل مع شركة جسور؟",
+            answer: "يمكنكم التواصل مع شركة جسور للوساطة التأمينية من خلال أرقام الهواتف وعنوان البريد الإلكتروني والعنوان الموضحة في صفحة «اتصل بنا» على الموقع الإلكتروني. كما يمكنكم إرسال استفساراتكم من خلال نموذج التواصل المتاح، مع التأكد من إدخال بيانات صحيحة لتسهيل الرد عليكم."
+          },
+          {
+            question: "كيف يمكنني تقديم شكوى؟",
+            answer: "يمكنكم تقديم شكوى إلى شركة جسور من خلال قنوات التواصل الموضحة في صفحة «شكاوى العملاء» على الموقع الإلكتروني، مع توضيح موضوع الشكوى والبيانات اللازمة لمراجعتها. وتلتزم الشركة باستقبال الشكاوى والتعامل معها وفقاً للإجراءات المعتمدة. وفي حال عدم حل الشكوى أو عدم رضاكم عن معالجتها، يمكنكم تصعيدها إلى الهيئة العامة للرقابة المالية وفقاً للقواعد والإجراءات المعمول بها."
+          },
+          {
+            question: "كيف يمكنني الاطلاع على حقوقي كعميل تأمين؟",
+            answer: "يمكنكم زيارة صفحة «حقوق العملاء» على الموقع الإلكتروني للاطلاع على المعلومات المتعلقة بحقوق العملاء، والوصول إلى دليل حماية المتعاملين الصادر عن الهيئة العامة للرقابة المالية. وننصح بالاطلاع على شروط وثيقة التأمين وتغطياتها واستثناءاتها وحدود المسؤولية قبل اتخاذ قرار التأمين."
+          }
+        ]
       }
     }
   }
