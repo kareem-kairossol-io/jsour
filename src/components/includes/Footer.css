@@ -12,9 +12,8 @@
   }
   
   .footer-section {
-    flex: 1;
-    min-width: 200px;
     margin-bottom: 20px;
+    padding: 0 20px;
   }
   
   .footer-logo {
@@ -32,7 +31,7 @@
     color: #aaa;
     margin: 10px 0;
     display: flex;
-    align-items: start;
+    align-items: center;
     gap: 8px;
   }
 

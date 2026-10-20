@@ -19,7 +19,7 @@ const CustomerRights = () => {
                 <br />
                 <h2>{t('customerRights.consumerGuide')}</h2>
                 <p style={{
-                    padding: '32px 0 24px', fontSize: '16px', lineHeight: '32px'
+                    padding: '32px 0 24px', fontSize: '16px', lineHeight: '32px', textAlign: 'justify'
                 }}>
                     {t('customerRights.description')}
                     <br />

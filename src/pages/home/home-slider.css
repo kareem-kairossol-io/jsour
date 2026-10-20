@@ -74,14 +74,14 @@
     font-size: 3rem;
     font-weight: 700;
     margin-bottom: 1.5rem;
-    line-height: 1.1;
+    line-height: 120%;
 }
+
 
 .description {
     font-size: 1.125rem;
     color: #e5e7eb;
     margin-bottom: 2rem;
-    max-width: 32rem;
     line-height: 1.6;
 }
 
@@ -308,7 +308,7 @@
     }
 
     .title {
-        font-size: 5rem;
+        font-size: 3.5rem;
     }
 
     .social-links {

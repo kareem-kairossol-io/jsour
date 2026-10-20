@@ -26,7 +26,7 @@ const Temp = () => {
                         <div className="container">
                             <h1 className="page-title">{t('insuranceDetails.nonPayment.title')}</h1>
                         </div>
-                        <img src={life} alt={t('insuranceDetails.nonPayment.title')} />
+                        <img src="/Credit-Insurance/1.jpg" alt={t('insuranceDetails.nonPayment.title')} />
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
@@ -34,7 +34,7 @@ const Temp = () => {
                         <div className="container">
                             <h1 className="page-title">{t('insuranceDetails.nonPayment.title')}</h1>
                         </div>
-                        <img src={life} alt={t('insuranceDetails.nonPayment.title')} />
+                        <img src="/Credit-Insurance/2.jpg" alt={t('insuranceDetails.nonPayment.title')} />
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
@@ -42,15 +42,22 @@ const Temp = () => {
                         <div className="container">
                             <h1 className="page-title">{t('insuranceDetails.nonPayment.title')}</h1>
                         </div>
-                        <img src={life} alt={t('insuranceDetails.nonPayment.title')} />
+                        <img src="/Credit-Insurance/3.jpg" alt={t('insuranceDetails.nonPayment.title')} />
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <div className="page-header">
+                        <div className="container">
+                            <h1 className="page-title">{t('insuranceDetails.nonPayment.title')}</h1>
+                        </div>
+                        <img src="/Credit-Insurance/4.jpg" alt={t('insuranceDetails.nonPayment.title')} />
                     </div>
                 </SwiperSlide>
             </Swiper>
 
             <div className="container">
-                <ContentComponent img="/6236.jpg" content={`
+                <ContentComponent img="/imgs/non-payment.png" content={`
                     <div>
-                        <h2 style="margin-top:32px">${t('insuranceDetails.nonPayment.subtitle')}</h2>
                         <p style="padding:16px 0 24px; font-size:16px; line-height:32px">
                             ${t('insuranceDetails.nonPayment.content')}
                         </p>

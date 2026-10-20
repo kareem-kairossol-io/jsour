@@ -36,7 +36,7 @@ const resources = {
       slider: {
         slides: [
           {
-            title: "We build trust to <br> secure your future",
+            title: "We build trust to  secure your future",
             subtitle: "Protect Your Property",
             description: "Your partner at every step toward security.",
             buttonText: "Get Quote"
@@ -48,13 +48,13 @@ const resources = {
             buttonText: "Learn More"
           },
           {
-            title: "Smart Coverage. <br> Real Protection.",
+            title: "Smart Coverage.  Real Protection.",
             subtitle: "Your Health, Our Priority",
             description: "Innovative insurance solutions tailored to your needs.",
             buttonText: "Explore Plans"
           },
           {
-            title: "Protecting <br> What Matters Most",
+            title: "Protecting  What Matters Most",
             subtitle: "Industrial Protection Solutions",
             description: "We are here for you, Your family And your business.",
             buttonText: "Get Coverage"
@@ -101,8 +101,8 @@ const resources = {
           content: "Jusoor empowers individuals and organizations to safeguard their assets and navigate life's uncertainties with confidence. Through comprehensive insurance planning, we help you mitigate potential financial losses from unforeseen events like accidents, illnesses, natural disasters, and liabilities. Our approach involves a systematic assessment of your current and future needs. We identify the most suitable insurance coverage options, ensuring your policies adapt to changing circumstances. Effective insurance planning offers peace of mind. More importantly, it serves as a proactive strategy to maintain financial stability and protect your long-term financial goals. Whether it's securing life, health, property, liability, or any other form of insurance, a thoughtful approach to insurance planning with Jusoor can make a significant difference."
         },
         issuanceManagement: {
-          title: "Issuance Management",
-          content: "Issuance management ensures the timely, accurate, and efficient delivery of insurance policies to our clients. This multi-step process involves meticulous attention to detail, including verification of policy information, risk assessment, premium calculation, and document generation. We collaborate closely with insurance companies to expedite application processing and issuance of policies that perfectly align with client needs. Our team plays a crucial role in maintaining regulatory compliance and upholding the highest standards of accuracy. We meticulously maintain records, track timelines, and proactively address any discrepancies to ensure a smooth experience. By implementing best practices, we minimize errors, streamline operations, and enhance customer satisfaction – all contributing to the overall success of our business."
+          title: "Policy Issuance Follow-up Management",
+          content: "The Policy Issuance Follow-up function ensures the timely, accurate, and efficient delivery of insurance policies to our clients. This multi-step process involves meticulous attention to detail, including verification of policy information, risk assessment, premium calculation, and document generation. We collaborate closely with insurance companies to expedite application processing and issuance of policies that perfectly align with client needs. Our team plays a crucial role in maintaining regulatory compliance and upholding the highest standards of accuracy. We meticulously maintain records, track timelines, and proactively address any discrepancies to ensure a smooth experience. By implementing best practices, we minimize errors, streamline operations, and enhance customer satisfaction – all contributing to the overall success of our business."
         },
         accuracyAdequacy: {
           title: "Accuracy and Adequacy",
@@ -211,17 +211,21 @@ const resources = {
       },
       about: {
           title: "About Jusoor",
+          aboutus: {
+            title: "About Us",
+            content: "Jusoor Insurance Brokerage is a specialized insurance brokerage company committed to helping individuals, businesses, and institutions identify their insurance needs and explore coverage options suited to their activities and risk exposures. We coordinate with insurance companies to present available solutions while striving to provide professional support, promote transparency, and build long-term relationships based on trust and credibility."
+          },
           vision: {
               title: "Our Vision",
-              content: "Vision content..."
+              content: "Effectively changing the traditional patterns of insurance brokerage in the Egyptian market and identifying the latest international technologies that enable the Egyptian insurance brokerage market to be at the forefront of the Arab and international markets Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat cum quod error officia dolor aspernatur nobis quasi dolores vitae, consectetur similique! Eligendi voluptate cum quo esse facilis temporibus exercitationem unde Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit reiciendis qui voluptatibus adipisci tempora, nihil repellendus amet perferendis quisquam veniam voluptas ut aut totam voluptatum officia illo dolor maiores beatae."
           },
           mission: {
               title: "Our Mission",
-              content: "Mission content..."
+              content: "Strengthening the Egyptian insurance market by providing the highest levels of insurance services and solutions in its various sectors, using all energies, expertise and tools to impose a competitive and effective performance that serves both clients and insurance companies at the technical and financial levels. Promoting insurance awareness simulates the strongest global insurance markets that developing the technical expertise, which in turn supports the country’s Gross National Product Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi magni saepe quae! Similique beatae eos eum minus voluptate distinctio, debitis quae corrupti neque nostrum et illo a amet obcaecati assumenda."
           },
           objective: {
               title: "Our Objective",
-              content: "Objective content..."
+              content: "Improving the professional and service level of the insurance brokerage activities in the Arab Republic of Egypt, by targeting an elite group of leaders and expertise in the Egyptian insurance market of all its sectors, who have the ability to provide the insurance activities for companies and individuals at a professional level that simulates the business size and aspirations of the Egyptian market Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error nesciunt facere inventore, iure accusamus veritatis reprehenderit numquam vel ipsum, explicabo molestiae similique velit eligendi voluptatum adipisci nulla incidunt commodi culpa!. "
           }
       },
       privacy: {
@@ -376,7 +380,7 @@ const resources = {
         },
         regulation: {
           text1: "Jusoor for Insurance Brokerage is regulated and supervised by the Financial Regulatory Authority (F.R.A) and licensed under no. 106. The website has been approved by the FRA on ../../….",
-          text2: "C.R No.: 168676 | Tax Registration No.: 636-084-167"
+          text2: "C.R No.: 254159 | Tax Registration No.: 636-084-167"
         },
         copyright: "COPYRIGHT © 2025 JUSOOR FOR INSURANCE BROKERAGE - ALL RIGHTS RESERVED."
       },
@@ -464,20 +468,20 @@ const resources = {
         investment: "التأمين الاستثماري",
         motor: "التأمين على السيارات",
         cargo: "تأمين البضائع",
-        hull: "تأمين الهياكل",
+        hull: "تأمين أجسام السفن",
         aviation: "التأمين على الطيران",
         engineering: "التأمين الهندسي",
         oilGas: "تأمين النفط والغاز",
         fire: "التأمين ضد الحريق",
         miscellaneous: "التأمينات المتنوعة",
-        nonPayment: "التأمين ضد مخاطر عدم الدفع",
+        nonPayment: "التأمين ضد مخاطر عدم السداد",
         cyber: "التأمين الإلكتروني",
         agricultural: "التأمين الزراعي"
       },
       slider: {
         slides: [
           {
-            title: "نبني الثقة <br> لتأمين مستقبلك",
+            title: "نبني الثقة  لتأمين مستقبلك",
             subtitle: "احم ممتلكاتك",
             description: "شريكك في كل خطوة نحو الأمان.",
             buttonText: "احصل على عرض"
@@ -489,13 +493,13 @@ const resources = {
             buttonText: "اعرف المزيد"
           },
           {
-            title: "تغطية ذكية. <br> حماية حقيقية.",
+            title: "تغطية ذكية.  حماية حقيقية.",
             subtitle: "صحتك، أولويتنا",
             description: "حلول تأمينية مبتكرة مصممة خصيصاً لاحتياجاتك.",
             buttonText: "استكشف الخطط"
           },
           {
-            title: "حماية <br> ما يهم أكثر",
+            title: "حماية  ما يهم أكثر",
             subtitle: "حلول الحماية الصناعية",
             description: "نحن هنا من أجلك، عائلتك وعملك.",
             buttonText: "احصل على التغطية"
@@ -542,8 +546,8 @@ const resources = {
           content: "تُمكّن جسور الأفراد والمنظمات من حماية أصولهم والتعامل مع عدم اليقين في الحياة بثقة. من خلال التخطيط التأميني الشامل، نساعدك على تخفيف الخسائر المالية المحتملة من الأحداث غير المتوقعة مثل الحوادث، والأمراض، والكوارث الطبيعية، والمسؤوليات. يشمل نهجنا تقييمًا منهجيًا لاحتياجاتك الحالية والمستقبلية. نقوم بتحديد خيارات التغطية التأمينية الأنسب، مما يضمن أن تتكيف سياساتك مع الظروف المتغيرة. يوفر التخطيط التأميني الفعّال راحة البال، والأهم من ذلك، أنه يعد استراتيجية استباقية للحفاظ على الاستقرار المالي وحماية أهدافك المالية طويلة الأجل. سواء كان ذلك لتأمين الحياة، أو الصحة، أو الممتلكات، أو المسؤولية، أو أي شكل آخر من أشكال التأمين، فإن نهجًا مدروسًا للتخطيط التأميني مع جسور يمكن أن يحدث فرقًا كبيرًا."
         },
         issuanceManagement: {
-          title: "إدارة الإصدار",
-          content: "تضمن إدارة الإصدار التسليم الفوري والدقيق والفعال لوثائق التأمين لعملائنا. تضمن هذه العملية متعددة الخطوات إهتمامًا دقيقًا بالتفاصيل، بما في ذلك التحقق من معلومات الوثائق، وتقييم المخاطر، وحساب الأقساط. نتعاون بشكل وثيق مع شركات التأمين لتسريع معالجة الطلبات وإصدار الوثائق التي تتماشى تمامًا مع احتياجات العملاء. يلعب فريقنا دورًا حيويًا في الحفاظ على الامتثال التنظيمي والتمسك بأعلى معايير الدقة. نحافظ بدقة على السجلات، ونتتبع الجداول الزمنية، ونتعامل بشكل استباقي مع أي تناقضات لضمان تجربة سلسة. من خلال تنفيذ أفضل الممارسات، نقلل من الأخطاء، ونبسط العمليات، ونعزز رضا العملاء – مما يسهم في النجاح الشامل لأعمالنا."
+          title: "إدارة متابعة اإلصدار",
+          content: "تضمن إدارة متابعة الإصدار التسليم الفوري والدقيق والفعال لوثائق التأمين لعملائنا. تضمن هذه العملية متعددة الخطوات اهتمامًا دقيقًا بالتفاصيل، بما في ذلك التحقق من معلومات الوثائق، وتقييم المخاطر، وحساب الأقساط. نتعاون بشكل وثيق مع شركات التأمين لتسريع معالجة الطلبات وإصدار الوثائق التي تتماشى تمامًا مع احتياجات العملاء. يلعب فريقنا دورًا حيويًا في الحفاظ على الامتثال التنظيمي والتمسك بأعلى معايير الدقة. نحافظ بدقة على السجلات، ونتتبع الجداول الزمنية، ونتعامل بشكل استباقي مع أي تناقضات لضمان تجربة سلسة. من خلال تنفيذ أفضل الممارسات، نقلل من الأخطاء، ونبسط العمليات، ونعزز رضا العملاء، مما يسهم في النجاح الشامل لأعمالنا."
         },
         accuracyAdequacy: {
           title: "الدقة والكفاية",
@@ -631,7 +635,7 @@ const resources = {
         nonPayment: {
           title: "التأمين ضد مخاطر عدم السداد",
           subtitle: "شخصي وللشركات",
-          content: "التأمين ضد مخاطر عدم السداد، المعروف أيضًا باسم تأمين الائتمان، يوفر حماية للشركات ضد خطر فشل عملائها أو زبائنها في دفع ثمن السلع أو الخدمات. يغطي هذا النوع من التأمين الخسائر الناجمة عن عدم السداد بسبب الإفلاس أو الإفلاس أو التأخر المطول في السداد. من خلال تأمين هذا النوع من التأمين، يمكن للشركات حماية تدفقها النقدي، وتخفيف الخسائر المالية، والحفاظ على الاستقرار حتى في مواجهة العملاء غير الموثوقين أو المفلسين. كما يمكن للشركات أن تمنح ائتمانًا لعملاء جدد بثقة أكبر، مما يدعم النمو والتوسع مع تقليل المخاطر المرتبطة بعدم السداد."
+          content: "التأمين ضد مخاطر عدم السداد، المعروف أيضًا باسم تأمين الائتمان، يوفر حماية للشركات ضد خطر فشل عملائها أو زبائنها في دفع ثمن السلع أو الخدمات. يغطي هذا النوع من التأمين الخسائر الناجمة عن عدم السداد بسبب الإفلاس أو التأخر المطول في السداد. من خلال تأمين هذا النوع من التأمين، يمكن للشركات حماية تدفقها النقدي، وتخفيف الخسائر المالية، والحفاظ على الاستقرار حتى في مواجهة العملاء غير الموثوقين أو المفلسين. كما يمكن للشركات أن تمنح ائتمانًا لعملاء جدد بثقة أكبر، مما يدعم النمو والتوسع مع تقليل المخاطر المرتبطة بعدم السداد."
         },
         cyber: {
           title: "التأمين ضد المخاطر الإلكترونية",
@@ -652,6 +656,10 @@ const resources = {
       },
       about: {
         title: "عن جسور",
+        aboutus: {
+          title: "من نحن",
+          content: "جسور للوساطة التأمينية شركة متخصصة في تقديم خدمات الوساطة التأمينية، تهدف إلى مساعدة الأفراد والشركات والمؤسسات في تحديد احتياجاتهم التأمينية والتعرف على الحلول والتغطيات المناسبة لطبيعة أنشطتهم ومخاطرهم. ونعمل على التنسيق مع شركات التأمين لتوفير الخيارات المتاحة، مع الحرص على تقديم الدعم المهني، وتعزيز الشفافية، وبناء علاقات طويلة الأمد قائمة على الثقة والمصداقية."
+        },
         vision: {
             title: "رؤيتنا",
             content: "نسعى لأن نكون الشريك الأكثر موثوقية في مجال الوساطة التأمينية، من خلال تقديم حلول مبتكرة تلبي احتياجات عملائنا وتتجاوز توقعاتهم."
@@ -819,7 +827,7 @@ const resources = {
         },
         regulation: {
           text1: "جسور لوساطة التأمين منظمة وخاضعة لإشراف الهيئة العامة للرقابة المالية ومرخصة برقم 106. تمت الموافقة على الموقع من قبل الهيئة العامة للرقابة المالية في ../../….",
-          text2: "رقم السجل التجاري: 168676 | رقم التسجيل الضريبي: 636-084-167"
+          text2: "رقم السجل التجاري: 254159 | رقم التسجيل الضريبي: 167-084-636"
         },
         copyright: "حقوق النشر © 2025 جسور لوساطة التأمين - جميع الحقوق محفوظة."
       },

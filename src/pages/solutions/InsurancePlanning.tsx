@@ -15,7 +15,7 @@ const Temp = () => {
             </div>
             <div className="container">
                 <p style={{
-                    padding: '32px 0 24px', fontSize: '16px', lineHeight: '32px'
+                    padding: '32px 0 24px', fontSize: '16px', lineHeight: '32px', textAlign: 'justify'
                 }}>
                     {t("solutions.insurancePlanning.content")}
                 </p>

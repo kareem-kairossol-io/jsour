@@ -53,8 +53,7 @@ const Home = () => {
       >
         <div className="container">
           <div className="imgs">
-            <img src="/imgs/Secure your assets.jpg" alt="" />
-            <img src="/imgs/image.png" alt="" />
+            <img src="/imgs/Secure Your Assets.png" alt="" />
           </div>
           <div className="text">
             <div>

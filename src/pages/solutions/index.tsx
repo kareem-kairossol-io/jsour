@@ -8,17 +8,41 @@ import claim from './../../images/claim.jpg'
 import policy from './../../images/policy.jpg'
 import { Link } from "react-router-dom"
 import { useTranslation } from "react-i18next"
+import { SwiperSlide, Swiper } from "swiper/react"
+import { Navigation, Pagination, Autoplay } from "swiper/modules"
+import "swiper/css"
+import "swiper/css/navigation"
+import "swiper/css/pagination"
 
 const Solutions = () => {
     const {t} = useTranslation()
     return (
         <DefaultLayout>
-            <div className="page-header">
-                <div className="container">
-                    <h1 className="page-title">{t('solutions.title')}</h1>
-                </div>
-                <img src={sol} alt="" />
-            </div>
+            <Swiper
+            modules={[Pagination, Autoplay]}
+            pagination={{ clickable: true }}
+            spaceBetween={30}
+            autoplay={{ delay: 4000 }}
+            loop
+            className="swiper-container"
+            >
+                <SwiperSlide>
+                    <div className="page-header">
+                        <div className="container">
+                            {/* <h1 className="page-title">{t('insuranceDetails.fire.title')}</h1> */}
+                        </div>
+                        <img src="/How-we-work/1.jpg" alt={t('insuranceDetails.fire.title')} />
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <div className="page-header">
+                        <div className="container">
+                            {/* <h1 className="page-title">{t('insuranceDetails.fire.title')}</h1> */}
+                        </div>
+                        <img src="/How-we-work/2.jpg" alt={t('insuranceDetails.fire.title')} />
+                    </div>
+                </SwiperSlide>
+            </Swiper>
             <section className="popular">
                 <div className="container">
                 <Link to={'/Insurance-Planning'} className="prod">

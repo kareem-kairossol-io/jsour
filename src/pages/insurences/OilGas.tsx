@@ -26,7 +26,7 @@ const Temp = () => {
                         <div className="container">
                             <h1 className="page-title">{t('insuranceDetails.oilGas.title')}</h1>
                         </div>
-                        <img src={OilGas} alt={t('insuranceDetails.oilGas.title')} />
+                        <img src="/Oil-and-gas-insurance/1.jpg" alt={t('insuranceDetails.oilGas.title')} />
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
@@ -34,7 +34,7 @@ const Temp = () => {
                         <div className="container">
                             <h1 className="page-title">{t('insuranceDetails.oilGas.title')}</h1>
                         </div>
-                        <img src={OilGas} alt={t('insuranceDetails.oilGas.title')} />
+                        <img src="/Oil-and-gas-insurance/2.jpg" alt={t('insuranceDetails.oilGas.title')} />
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
@@ -42,15 +42,14 @@ const Temp = () => {
                         <div className="container">
                             <h1 className="page-title">{t('insuranceDetails.oilGas.title')}</h1>
                         </div>
-                        <img src={OilGas} alt={t('insuranceDetails.oilGas.title')} />
+                        <img src="/Oil-and-gas-insurance/3.jpg" alt={t('insuranceDetails.oilGas.title')} />
                     </div>
                 </SwiperSlide>
             </Swiper>
 
             <div className="container">
-                <ContentComponent img="/6236.jpg" content={`
+                <ContentComponent img="/oil-inssurance.png" content={`
                     <div>
-                        <h2 style="margin-top:32px">${t('insuranceDetails.oilGas.subtitle')}</h2>
                         <p style="padding:16px 0 24px; font-size:16px; line-height:32px">
                             ${t('insuranceDetails.oilGas.content')}
                         </p>

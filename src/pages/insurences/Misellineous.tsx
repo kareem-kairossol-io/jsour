@@ -26,7 +26,7 @@ const Temp = () => {
                         <div className="container">
                             <h1 className="page-title">{t('insuranceDetails.miscellaneous.title')}</h1>
                         </div>
-                        <img src={Misellineous} alt={t('insuranceDetails.miscellaneous.title')} />
+                        <img src="/Miscellaneous-perils-insurance/1.jpg" alt={t('insuranceDetails.miscellaneous.title')} />
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
@@ -34,7 +34,7 @@ const Temp = () => {
                         <div className="container">
                             <h1 className="page-title">{t('insuranceDetails.miscellaneous.title')}</h1>
                         </div>
-                        <img src={Misellineous} alt={t('insuranceDetails.miscellaneous.title')} />
+                        <img src="/Miscellaneous-perils-insurance/2.jpg" alt={t('insuranceDetails.miscellaneous.title')} />
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
@@ -42,7 +42,7 @@ const Temp = () => {
                         <div className="container">
                             <h1 className="page-title">{t('insuranceDetails.miscellaneous.title')}</h1>
                         </div>
-                        <img src={Misellineous} alt={t('insuranceDetails.miscellaneous.title')} />
+                        <img src="/Miscellaneous-perils-insurance/3.jpg" alt={t('insuranceDetails.miscellaneous.title')} />
                     </div>
                 </SwiperSlide>
             </Swiper>

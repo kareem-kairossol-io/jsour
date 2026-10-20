@@ -26,7 +26,7 @@ const Temp = () => {
                         <div className="container">
                             <h1 className="page-title">{t('insuranceDetails.engineering.title')}</h1>
                         </div>
-                        <img src={Engineering} alt={t('insuranceDetails.engineering.title')} />
+                        <img src="/Engineering-insurance/1.jpg" alt={t('insuranceDetails.engineering.title')} />
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
@@ -34,7 +34,7 @@ const Temp = () => {
                         <div className="container">
                             <h1 className="page-title">{t('insuranceDetails.engineering.title')}</h1>
                         </div>
-                        <img src={Engineering} alt={t('insuranceDetails.engineering.title')} />
+                        <img src="/Engineering-insurance/2.jpg" alt={t('insuranceDetails.engineering.title')} />
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
@@ -42,7 +42,7 @@ const Temp = () => {
                         <div className="container">
                             <h1 className="page-title">{t('insuranceDetails.engineering.title')}</h1>
                         </div>
-                        <img src={Engineering} alt={t('insuranceDetails.engineering.title')} />
+                        <img src="/Engineering-insurance/3.jpg" alt={t('insuranceDetails.engineering.title')} />
                     </div>
                 </SwiperSlide>
             </Swiper>
@@ -50,7 +50,6 @@ const Temp = () => {
             <div className="container">
                 <ContentComponent img="/imgs/Engineering insurance.jpg" content={`
                     <div>
-                        <h2 style="margin-top:32px">${t('insuranceDetails.engineering.subtitle')}</h2>
                         <p style="padding:16px 0 24px; font-size:16px; line-height:32px">
                             ${t('insuranceDetails.engineering.content')}
                         </p>

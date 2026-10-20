@@ -39,13 +39,14 @@ const Footer = () => {
                 <div className="footer-section">
                     <h5 className="footer-heading">{t('footer.quickLinks.title')}</h5>
                     <Link className="footer-link" to="/about">{t('footer.quickLinks.aboutUs')}</Link>
-                    <Link className="footer-link" to="/contact">{t('footer.quickLinks.contactUs')}</Link>
-                    <Link className="footer-link" to="/solutions">{t('footer.quickLinks.ourSolutions')}</Link>
+                    <Link className="footer-link" to={'/solutions'}>{t('header.howWeWork')}</Link>
                     <Link className="footer-link" to="/Terms-and-Conditions">{t('footer.quickLinks.terms')}</Link>
                     <Link className="footer-link" to="/Privacy-policy">{t('footer.quickLinks.privacy')}</Link>
+                    {/* <Link className="footer-link" to="/contact">{t('footer.quickLinks.contactUs')}</Link> */}
+                    {/* <Link className="footer-link" to="/solutions">{t('footer.quickLinks.ourSolutions')}</Link> */}
                 </div>
                 
-                <div className="footer-section">
+                {/* <div className="footer-section">
                     <h5 className="footer-heading">{t('footer.socialMedia.title')}</h5>
                     <p className="footer-text">{t('footer.socialMedia.subtitle')}</p>
                     <div className="social-media-icons">
@@ -62,7 +63,7 @@ const Footer = () => {
                             <i className="fab fa-linkedin-in"></i>
                         </a>
                     </div>
-                </div>
+                </div> */}
             </div>
             
             <div className="footer-complaints" style={{maxWidth: 1500, margin: 'auto', textAlign: 'center', marginBottom: 16, color: '#fff'}}>

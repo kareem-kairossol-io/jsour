@@ -26,7 +26,7 @@ const Temp = () => {
                         <div className="container">
                             <h1 className="page-title">{t('insuranceDetails.cyber.title')}</h1>
                         </div>
-                        <img src={Cargo} alt={t('insuranceDetails.cyber.title')} />
+                        <img src="/Cyber-insurance/1.jpg" alt={t('insuranceDetails.cyber.title')} />
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
@@ -34,7 +34,7 @@ const Temp = () => {
                         <div className="container">
                             <h1 className="page-title">{t('insuranceDetails.cyber.title')}</h1>
                         </div>
-                        <img src={Cargo} alt={t('insuranceDetails.cyber.title')} />
+                        <img src="/Cyber-insurance/2.jpg" alt={t('insuranceDetails.cyber.title')} />
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
@@ -42,7 +42,15 @@ const Temp = () => {
                         <div className="container">
                             <h1 className="page-title">{t('insuranceDetails.cyber.title')}</h1>
                         </div>
-                        <img src={Cargo} alt={t('insuranceDetails.cyber.title')} />
+                        <img src="/Cyber-insurance/3.jpg" alt={t('insuranceDetails.cyber.title')} />
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <div className="page-header">
+                        <div className="container">
+                            <h1 className="page-title">{t('insuranceDetails.cyber.title')}</h1>
+                        </div>
+                        <img src="/Cyber-insurance/4.jpg" alt={t('insuranceDetails.cyber.title')} />
                     </div>
                 </SwiperSlide>
             </Swiper>
@@ -50,7 +58,6 @@ const Temp = () => {
             <div className="container">
                 <ContentComponent img="/120318.jpg" content={`
                     <div>
-                        <h2 style="margin-top:32px">${t('insuranceDetails.cyber.subtitle')}</h2>
                         <p style="padding:16px 0 24px; font-size:16px; line-height:32px">
                             ${t('insuranceDetails.cyber.content')}
                         </p>
