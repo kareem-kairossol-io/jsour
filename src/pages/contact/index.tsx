@@ -16,12 +16,18 @@ const Contact = () => {
     });
     const [loading, setLoading] = useState<boolean>(false);
 
+    // Feature Flag: Enable/Disable contact form submission
+    // Set REACT_APP_ENABLE_CONTACT_FORM='false' in .env for test environment, 'true' for production
+    const isFormEnabled = process.env.REACT_APP_ENABLE_CONTACT_FORM !== "false";
+
     // Google reCAPTCHA v3 site key
     const siteKey = process.env.REACT_APP_RECAPTCHA_SITE_KEY || "6LeftfgtAAAAAL6EGkrltuVGRzdfM54hq167svVU";
     const apiUrl = process.env.REACT_APP_CONTACT_API_URL || `${process.env.PUBLIC_URL || ''}/send-email.php`;
 
     // Load reCAPTCHA v3 script dynamically
     useEffect(() => {
+        if (!isFormEnabled) return;
+
         const scriptId = 'google-recaptcha-v3-script';
         if (!document.getElementById(scriptId)) {
             const script = document.createElement('script');
@@ -30,7 +36,7 @@ const Contact = () => {
             script.async = true;
             document.body.appendChild(script);
         }
-    }, [siteKey]);
+    }, [siteKey, isFormEnabled]);
 
     const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
         const { name, value } = e.target;
@@ -40,9 +46,15 @@ const Contact = () => {
     const handleSubmit = async (e: FormEvent) => {
         e.preventDefault();
 
-        // Validation
+        // Basic validation
         if (!formData.name.trim() || !formData.email.trim() || !formData.message.trim()) {
             toast.warning(t('contact.form.fillAllFields') || "Please fill in all required fields.");
+            return;
+        }
+
+        // Feature Flag Check: When disabled in test environment
+        if (!isFormEnabled) {
+            toast.info(t('contact.form.disabledMessage') || "The contact form is currently disabled in the test environment.");
             return;
         }
 
@@ -76,6 +88,11 @@ const Contact = () => {
                     'Content-Type': 'application/json'
                 }
             });
+
+            if (response.data && response.data.disabled) {
+                toast.info(response.data.message || t('contact.form.disabledMessage'));
+                return;
+            }
 
             if (response.data && response.data.success) {
                 toast.success(t('contact.form.success') || "Message sent successfully!");
@@ -140,6 +157,25 @@ const Contact = () => {
                                 required
                                 rows={5}
                             ></textarea>
+
+                            {!isFormEnabled && (
+                                <div
+                                    style={{
+                                        gridColumn: "span 2",
+                                        backgroundColor: "#fef3c7",
+                                        border: "1px solid #f59e0b",
+                                        color: "#92400e",
+                                        padding: "12px 16px",
+                                        borderRadius: "8px",
+                                        fontSize: "14px",
+                                        textAlign: "center",
+                                        fontWeight: 500,
+                                        lineHeight: 1.5
+                                    }}
+                                >
+                                    ℹ️ {t('contact.form.disabledNotice')}
+                                </div>
+                            )}
 
                             <button 
                                 type="submit" 

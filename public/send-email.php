@@ -36,6 +36,18 @@ $email_title = $config['email_title'] ?? 'Jusoor Contact Form Submit';
 $recipient_email = $config['recipient_email'] ?? 'info@jusoor.com.eg';
 $recaptcha_secret = $config['recaptcha_secret'] ?? '6LeftfgtAAAAABtPwq5MqSci96cIPwVVg81X07zT';
 
+// Feature flag check: If disabled for test environment
+$form_enabled = $config['contact_form_enabled'] ?? true;
+if ($form_enabled === false || $form_enabled === 'false') {
+    http_response_code(200);
+    echo json_encode([
+        'success' => false,
+        'disabled' => true,
+        'message' => 'خدمة التواصل عبر النموذج معطلة حالياً في النسخة التجريبية، وسيتم تفعيلها في النسخة الرسمية قريباً.'
+    ]);
+    exit;
+}
+
 // Read JSON input or form POST data
 $raw_input = file_get_contents('php://input');
 if (empty($raw_input)) {

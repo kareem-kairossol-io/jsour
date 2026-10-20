@@ -211,7 +211,9 @@ const resources = {
           success: "Your message has been sent successfully!",
           error: "Failed to send message. Please try again later.",
           recaptchaError: "Please complete the reCAPTCHA verification.",
-          fillAllFields: "Please fill in all required fields."
+          fillAllFields: "Please fill in all required fields.",
+          disabledMessage: "The contact form is currently disabled in the test environment and will be enabled in the production version soon.",
+          disabledNotice: "Notice: The contact form is currently running in test mode."
         }
       },
       about: {
@@ -711,7 +713,9 @@ const resources = {
           success: "تم إرسال رسالتك بنجاح! سنتواصل معك قريباً.",
           error: "حدث خطأ أثناء إرسال الرسالة. يرجى المحاولة مرة أخرى.",
           recaptchaError: "يرجى التحقق من اختبار reCAPTCHA.",
-          fillAllFields: "يرجى ملء جميع الحقول المطلوبة."
+          fillAllFields: "يرجى ملء جميع الحقول المطلوبة.",
+          disabledMessage: "خدمة التواصل عبر النموذج معطلة حالياً في النسخة التجريبية، وسيتم تفعيلها في النسخة الرسمية قريباً.",
+          disabledNotice: "تنبيه: نموذج التواصل يعمل في وضع البيئة التجريبية حالياً."
         }
       },
       about: {
