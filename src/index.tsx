@@ -8,7 +8,7 @@ import store, { persistor } from './store';
 import { Provider } from 'react-redux';
 import './i18n/config'
 
-const savedLanguage = localStorage.getItem('language') || 'en';
+const savedLanguage = localStorage.getItem('language') || 'ar';
 document.documentElement.dir = savedLanguage === 'ar' ? 'rtl' : 'ltr';
 document.documentElement.lang = savedLanguage;
 
